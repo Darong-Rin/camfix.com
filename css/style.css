@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+}
+:root {
+  --color-ddd: #ffffff;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.col-2 {
+  width: ;
+}
+.col-4 {
+  width: ;
+}
+.col-6 {
+  width: ;
+}
+.col-12 {
+  width: ;
+}
+
+ul {
+  list-style: none;
+}
+/* !------ Header Bar ------ */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-ddd);
+  box-shadow: 1px 1px 3px #ddd;
+}
+header .navbar {
+  display: flex;
+}
+header .navbar .logo a img {
+  height: 45px;
+}
