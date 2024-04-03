@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Kantumruy Pro", sans-serif;
+font-family: "Poppins", sans-serif; */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
+  font-family: "Kantumruy Pro", sans-serif;
 }
 :root {
-  --color-ddd: #ffffff;
+  --color-white: white;
+  --color-black: black;
+  --font-kantumruy: "Kantumruy Pro", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 .container {
   width: 1200px;
@@ -36,17 +43,27 @@ header {
   box-shadow: 1px 1px 3px #ddd;
 }
 header .navbar {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: aqua; */
 }
 header .navbar .logo a img {
-  height: 35px;
-  ma
+  height: 33px;
 }
 header .navbar .navbar-nav {
   display: flex;
 }
-header .navbar .navbar-right ul {
-  display: flex;
+header .navbar .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  display: block;
+  color: var(--color-black);
+}
+
+header .navbar .navbar-right .navbar-nav .nav-item .nav-link {
+  font-size: 22px;
 }
