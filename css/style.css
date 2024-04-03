@@ -37,7 +37,16 @@ header {
 }
 header .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .navbar .logo a img {
-  height: 45px;
+  height: 35px;
+  ma
+}
+header .navbar .navbar-nav {
+  display: flex;
+}
+header .navbar .navbar-right ul {
+  display: flex;
 }
