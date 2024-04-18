@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+  background-color: #f5f7fa;
+}
+
+:root {
+  --color-ddd: #ddd;
+  --color-5d5d5d: #5d5d5d;
+  --color-white: white;
+  --color-black: black;
+  --color-FC7933: #0047ff;
+  --color-FA5736: #138dff;
+  --color-F7233C: #01c5ef;
+  --font-kantumruy: "Kantumruy Pro", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: ;
+}
+
+.col-3 {
+  width: ;
+}
+
+.col-4 {
+  width: ;
+}
+
+.col-6 {
+  width: ;
+}
+
+.col-9 {
+  width: ;
+}
+
+.col-12 {
+  width: ;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+/* !------------------------------------------------- */
+/* !                   HOME PAGE                      */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+/* !------ Header Bar ------ */
+/* !------------------------ */
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 10px 1px 1px #ddd;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+header .navbar .logo a img {
+  height: 30px;
+}
+
+header .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .navbar-nav .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .navbar .navbar-nav .menu .nav-item {
+  padding: 0 10px;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  padding: 11px 3px;
+  color: var(--color-5d5d5d);
+  font-size: 19px;
+  font-weight: 500;
+  display: block;
+}
+
+header .navbar .navbar-nav .navbar-right {
+  display: flex;
+  margin-left: 30px;
+}
+
+header .navbar .navbar-nav .navbar-right ul {
+  display: flex;
+  list-style: none;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item {
+  position: relative;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .nav-link {
+  font-size: 22px;
+  padding: 10px 8px;
+  position: relative;
+}
+
+header .navbar .navbar-nav .navbar-right .profile a img {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  margin-left: 10px;
+  border: 1px solid grey;
+  background-color: var(--color-F7233C);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--color-FA5736);
+}
+
+header .navbar .navbar-nav .menu .nav-item .hvr-underline-from-center::before {
+  background-color: #2595ff;
+  height: 3px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item:first-child .nav-link::after {
+  content: "4";
+  color: var(--color-white);
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 19px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item:first-child:hover .nav-link::after {
+  background-color: var(--color-FA5736);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item:nth-child(2) .nav-link::after {
+  content: " ";
+  color: var(--color-white);
+  background-color: red;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 19px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item:nth-child(2):hover .nav-link::after {
+  background-color: var(--color-FA5736);
+}
+
+/* ?--------- Drop Down ---------- */
+/* !------------------------------ */
+header .navbar .navbar-nav .nav-item .drop-down {
+  display: none;
+  width: 300px;
+  position: absolute;
+  left: -230px;
+}
+header .navbar .navbar-nav .nav-item:hover .drop-down{
+  display: block;
+}
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .hidden {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -33px;
+  /* background-color: #138dff; */
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .arrow-up {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  position: absolute;
+  top: 5px;
+  right: 41px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item a:focus~.drop-down {
+  display: block;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification {
+  width: 100%;
+  height: 330px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  position: absolute;
+  top: 15px;
+  padding: 8px 0px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 8px 5px 8px;
+  border-bottom: 1px solid var(--color-ddd);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification .view {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: var(--color-FC7933);
+  padding: 6px 8px 5px 8px;
+  border-top: 1px solid var(--color-ddd);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification .view:hover {
+  text-decoration: underline;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification ul {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 260px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li {
+  width: 100%;
+  border-bottom: 1px solid var(--color-ddd);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .pic {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--color-ddd);
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .pic img {
+  width: 35px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .notification-des {
+  margin-left: 8px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .notification-des h5 {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .notification-des p {
+  font-size: 14px;
+  padding: 5px 0px 8px 0px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .notification-des .time span {
+  font-size: 14px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li a .notification-des .time i {
+  font-size: 14px;
+}
+
+header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification li:hover a {
+  color: var(--color-FA5736);
+}
+
+
+
+
+
+
+
+
+
+
+/* !------------------------------------------------- */
+/* !                   LOGIN PAGE                     */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+
+
+
+/* !------------------------------------------------- */
+/* !                   SIGN UP PAGE                   */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+
+
+
+
+
+/* !------------------------------------------------- */
+/* !                     404 P AGE                    */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+
+
+
