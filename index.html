@@ -11,7 +11,14 @@
       sizes="16x16"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service-page.css" />
+    <link rel="stylesheet" href="css/login_signup-page.css" />
+    <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
+    <!-- ! tr -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-rounded.css" />
+    <!-- ! ts -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-straight.css" />
     <link rel="stylesheet" href="vendor/css/hover.css" />
     <link
       rel="stylesheet"
@@ -103,9 +110,9 @@
                   <a href="#" class="nav-link"><i class="fi fi-rr-bell"></i></a>
                   <div class="drop-down">
                     <div class="hidden"></div>
-                    <div class="notification">
+                    <div class="notification" >
                       <h4>ការជូនដំណឹង</h4>
-                      <ul>
+                      <ul id="notifications-scrollbar">
                         <li>
                           <a href="#">
                             <div class="pic">
@@ -182,7 +189,7 @@
                           </a>
                         </li>
                       </ul>
-                      <a href="#" class="view">មើលសារទាំងអស់</a>
+                      <a href="notifications.html" target="_blank" class="view">មើលសារទាំងអស់</a>
                     </div>
                     <span class="arrow-up"></span>
                   </div>
@@ -211,17 +218,149 @@
     <main>
       <!-- !banner -->
       <section class="hero-banner">
-        <div class="background">
-          <!-- <img src="image/1.webp" alt=""> -->
+        <div class="background-banner">
+          <img
+            src="image/service/webimage-2298F0F2-585D-4363-92D47A25F6D2C317.png"
+            alt=""
+          />
         </div>
+        <div class="background-bular"></div>
         <div class="container">
           <div class="contact"></div>
+        </div>
+      </section>
+      <!-- !--------------------- experience ---------------- -->
+      <section class="experience">
+        <div class="row">
+          <div class="col-3">
+            <div class="experience-left">
+              <div class="experience-15">
+                <span>15</span>
+                <span>ឆ្នាំដំំំណើរការសេវាកម្ម</span>
+              </div>
+              <p>
+                ជាមួយបទពិសោធន៍ជាច្រើនឆ្នាំ យើងធានាបាននូវលទ្ធផលការងារដែលល្អ
+                និង​គួរជាទីពេញចិត្តសម្រាប់លោកអ្នក
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="experience-center">
+              <img src="image/service/microwave.jpg" alt="" />
+              <div></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="experience-right">
+              <div class="text">
+                <p>
+                  យើងទទួលបានការកោតសរសើរ
+                  និង​ជឿទុកចិត្តពីអតិថិជនរបស់យើងដោយការវាយតម្លៃ 5/5
+                  នៃចំនួនអតិថិជន 500 នាក់
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !--------------------- Why Choose us -------------- -->
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h3>ហេតុអ្វីត្រូវជ្រើសរើស <span>CamFix</span>?</h3>
+              </div>
+              <div class="rular">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="box">
+                <div class="icon">
+                  <img src="image/icon/response.png" alt="" />
+                </div>
+                <div class="title-wcu">
+                  <h4>ការឆ្លើយតប</h4>
+                </div>
+                <div class="description">
+                  <p>ទទួលបានការឆ្លើយតបយ៉ាងឆាប់រហ័សដោយមិនចំណាយពេលរង់ចាំយូរ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="box">
+                <div class="icon">
+                  <img src="image/icon/assurance.png" alt="" />
+                </div>
+                <div class="title-wcu">
+                  <h4>គុណភាពការងារ</h4>
+                </div>
+                <div class="description">
+                  <p>
+                    ប្រមូលផ្ដុំដោយអ្នកមានចំណេះជំនាញ
+                    ច្បាស់លាស់និងមានបទពិសោធន៍ការងារជាច្រើនឆ្នាំ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="box">
+                <div class="icon">
+                  <img src="image/icon/customer-service.png" alt="" />
+                </div>
+                <div class="title-wcu">
+                  <h4>សេវាកម្មរហ័ស</h4>
+                </div>
+                <div class="description">
+                  <p>
+                    ប្រតិបត្តិការការងារភ្លាមៗ
+                    រហ័សទាន់ចិត្តដោយធានាបាននូវប្រសិទ្ធភាពការងារខ្ពស់
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="box">
+                <div class="icon">
+                  <img src="image/icon/24-7.png" alt="" />
+                </div>
+                <div class="title-wcu">
+                  <h4>ពេលវេលា</h4>
+                </div>
+                <div class="description">
+                  <p>
+                    អាចធ្វើការទាក់ទងបាន​ ២៤ម៉ោង
+                    ដែលផ្ដល់ភាពងាយស្រួលដល់លោកអ្នកនៅពេលមានបញ្ហាបន្ទាន់ផ្សេងៗ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !------- Service ------------- -->
+
+      <!-- !------ Our Team -------- -->
+      <section class="our-team">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="sub-title">
+                <small>ក្រុមអ្នកជំនាញរបស់យើង</small>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- !----------- Footer -------------- -->
-    <footer>
+    <!-- <footer>
       <div class="row">
         <div class="col-4">
           <div class="logo-footer">
@@ -237,9 +376,7 @@
             </p>
           </div>
         </div>
-        <div class="col-4">
-          
-        </div>
+        <div class="col-4"></div>
         <div class="col-4"></div>
       </div>
       <div class="row">
@@ -247,6 +384,7 @@
           <p></p>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <br /><br /><br /><br /><br />
   </body>
 </html>

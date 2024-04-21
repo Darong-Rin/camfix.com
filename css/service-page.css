@@ -16,7 +16,7 @@ body {
 header {
   width: 100%;
   height: 70px;
-  background-color: aqua;
+  /* background-color: aqua;se */
 }
 
 /* !--------------- service page ------------- */
@@ -43,20 +43,6 @@ header {
   font-size: 40px;
   color: var(--color-5d5d5d);
   position: absolute;
-}
-.service-page .breadcrumb {
-  text-decoration: none;
-  color: #5d5d5d;
-  font-weight: 500;
-  margin: 20px 0px;
-}
-.service-page .breadcrumb a {
-  text-decoration: none;
-  color: #5d5d5d;
-  font-size: 15px;
-}
-.service-page .breadcrumb a:hover {
-  color: var(--color-FC7933);
 }
 /* !------------------------------ */
 /* ?------------------------------ */

@@ -11,7 +11,14 @@
       sizes="16x16"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service-page.css">
+    <link rel="stylesheet" href="css/login_signup-page.css">
+    <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
+    <!-- ! tr -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-rounded.css" />
+    <!-- ! ts -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-straight.css" />
     <link rel="stylesheet" href="vendor/css/hover.css" />
     <link
       rel="stylesheet"
@@ -51,7 +58,7 @@
             </div>
             <div class="row">
               <div class="col-6">
-                <div class="form-group w-90">
+                <div class="form-group">
                   <label for="fname">នាមត្រកូល*</label>
                   <input
                     type="text"
@@ -59,11 +66,12 @@
                     id="fname"
                     class="form-control"
                     placeholder="បញ្ចូលនាមត្រកូលរបស់អ្នក"
+                    required
                   />
                 </div>
               </div>
               <div class="col-6">
-                <div class="form-group w-90 float-right">
+                <div class="form-group">
                   <label for="lname">នាមខ្លួន*</label>
                   <input
                     type="text"
@@ -71,6 +79,7 @@
                     id="lname"
                     class="form-control"
                     placeholder="បញ្ចូលនាមខ្លួនរបស់អ្នក"
+                    required
                   />
                 </div>
               </div>
@@ -85,6 +94,7 @@
                     id="email"
                     class="form-control"
                     placeholder="example123@gmail.com"
+                    required
                   />
                 </div>
               </div>
@@ -98,6 +108,7 @@
                     id="password"
                     class="form-control"
                     placeholder="សូមបញ្ចូលពាក្យសម្ងាត់របស់អ្នក"
+                    required
                   />
                 </div>
               </div>
@@ -111,6 +122,7 @@
                     id="Cpassword"
                     class="form-control"
                     placeholder="សូមបញ្ចូលពាក្យសម្ងាត់របស់អ្នក"
+                    required
                   />
                 </div>
               </div>
@@ -118,7 +130,7 @@
             <div class="row mt-5">
               <div class="col-12">
                 <div class="checkbox">
-                  <input type="checkbox" id="check" />
+                  <input type="checkbox" id="check" required/>
                   <label for="check"
                     >ខ្ញុំបានអាននិងយល់ព្រមលើ
                     <a href="">គោលការណ៍ឯកជនភាព</a></label
