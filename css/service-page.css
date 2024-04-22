@@ -9,9 +9,11 @@
   --font-kantumruy: "Kantumruy Pro", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 }
+
 body {
   background-color: #f5f7fa;
 }
+
 /* !---------------- CSS - 1 -------------------*/
 header {
   width: 100%;
@@ -20,11 +22,12 @@ header {
 }
 
 /* !--------------- service page ------------- */
-.service-page .banner {
+.banner {
   width: 100%;
   background-color: #d5d5d52b;
 }
-.service-page .banner .text {
+
+.text-banner {
   width: 100%;
   height: 150px;
   display: flex;
@@ -33,17 +36,20 @@ header {
   position: relative;
   user-select: none;
 }
-.service-page .banner .text h3:nth-child(1) {
+
+.text-banner h3:nth-child(1) {
   font-size: 50px;
   color: #adadad36;
   position: absolute;
   margin-top: 18px;
 }
-.service-page .banner .text h3:nth-child(2) {
+
+.text-banner h3:nth-child(2) {
   font-size: 40px;
   color: var(--color-5d5d5d);
   position: absolute;
 }
+
 /* !------------------------------ */
 /* ?------------------------------ */
 .service-page .service .card {
@@ -56,12 +62,14 @@ header {
   /* border-radius: 5px; */
   position: relative;
 }
+
 .service-page .service .card .image img {
   width: 100%;
   height: 180px;
   background-size: cover;
   object-fit: cover;
 }
+
 .service-page .service .card .title h4 {
   font-size: 20px;
   font-weight: 600;
@@ -69,6 +77,7 @@ header {
   margin: 10px 20px;
   /* text-align: center; */
 }
+
 .service-page .service .card .description {
   font-size: 16px;
   color: #5d5d5d;
@@ -81,6 +90,7 @@ header {
   background-color: var(--color-FA5736);
   padding: 10px;
 }
+
 .service-page .service .card .read-more a {
   text-decoration: none;
   font-size: 16px;
@@ -89,6 +99,7 @@ header {
   text-align: center;
   display: block;
 }
+
 .service-page .service .card .icon-service {
   width: 60px;
   height: 60px;
@@ -102,14 +113,17 @@ header {
   right: 10px;
   transition: 1s;
 }
+
 .service-page .service .card .icon-service i {
   color: var(--color-5d5d5d);
   font-size: 30px;
   margin-top: 10px;
 }
+
 .service-page .service .card:hover .title h4 {
   color: var(--color-FA5736);
 }
+
 .service-page .service .card .read-more:hover {
   background-color: #0047ff;
   font-weight: 500;
@@ -120,8 +134,10 @@ header {
   color: var(--color-white);
   margin-right: 30px;
 }
+
 .service-page .service .card:hover .icon-service i {
-  color: var(--color-white);}
+  color: var(--color-white);
+}
 
 /* animation: rotate 0.5s;
   @keyframes rotate{
