@@ -16,6 +16,7 @@ body {
 :root {
   --color-ddd: #ddd;
   --color-5d5d5d: #5d5d5d;
+  --color-303030:#303030
   --color-white: white;
   --color-black: black;
   --color-FC7933: #0047ff;
@@ -633,7 +634,113 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
   color: #454545;
   text-align: center;
 }
+/* !---------- Service ---------- */
+.service{
+  background-image: url(/image/ourservice-bg.jpg);
+  padding: 20px 0;
+  height: 500px;
+}
+.service .title h1{
+  font-size: 30px;
+  margin-top: 10px;
+  color: var(--color-303030);
+}
+/* !---------- Shop ------------- */
+.shop{
+margin-top: 70px;
+}
+.shop .title-header h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: var(--color-303030);
+  text-align: center;
+}
 
+.shop .des-shop p {
+  font-size: 18px;
+  color: var(--color-5d5d5d);
+  text-align: center;
+  padding: 10px;
+  border-left: 2px solid var(--color-ddd);
+  /* border-right: 2px solid var(--color-ddd); */
+}
+
+.shop .btn-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop .btn-view .view-all {
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(58, 133, 255);
+  border-top: 2px solid var(--color-FA5736);
+  border-bottom: 2px solid var(--color-FA5736);
+}
+
+.shop .card {
+  width: 100%;
+  /* height: 300px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.shop .card .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--color-white);
+}
+
+.shop .card .pic img {
+  height: 200px;
+}
+
+.shop .card .shop-card-des {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;  
+}
+
+.shop .card .shop-card-des a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.shop .card .shop-card-des a .type {
+  font-size: 15px;
+  color: var(--color-FA5736);
+}
+
+.shop .card .shop-card-des a .name{
+  font-size: 17px;
+  font-weight: 500;
+  color: #4e4e4e;
+  font-family: var(--font-poppins);
+}
+.shop .card .card-bottom{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.shop .card .card-bottom .price small{
+  font-size: 16px;
+  font-weight: 600;
+}
+.shop .card .card-bottom .rating{
+  padding-right: 6px;
+}
+.shop .card .card-bottom .rating i{
+  font-size: 17px;
+  margin-right: -6px;
+  color:orangered
+}
 /* !---------- Our Team ------------ */
 .our-team {
   border-bottom: 1px solid var(--color-ddd);
@@ -653,7 +760,7 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
   text-align: center;
   font-size: 30px;
   margin-top: 10px;
-  color: #138dff;
+  color: var(--color-303030);
 }
 
 .our-team .card {
@@ -681,7 +788,7 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
   position: absolute;
   top: 380px;
   right: 280px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .our-team .card .content {
@@ -734,7 +841,7 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 99;
+  z-index: 1;
 }
 
 .our-team .card .icon-social .icon i {
@@ -745,19 +852,20 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
 .our-team .card .icon-social ul {
   list-style: none;
   width: 40px;
+  height: 0px;
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px 0px 5px 0px;
   margin-top: -20px;
   border-radius: 0px 0px 50px 50px;
   position: absolute;
-  top: -190px;
+  top: 40px;
+  visibility: hidden;
+  opacity: 0;
   transition: 1s;
 }
 
-.our-team .card:hover .icon-social ul {
-  top: 40px;
-}
 
 .our-team .card .icon-social ul li a i {
   font-size: 25px;
@@ -779,6 +887,12 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .notification l
 
 .our-team .card .icon-social ul li:nth-child(4):hover a i {
   color: #46a9ff;
+}
+
+.our-team .card:hover .icon-social ul {
+  visibility: visible;
+  opacity: 1;
+  height: 185px;
 }
 
 .our-team .view-team {

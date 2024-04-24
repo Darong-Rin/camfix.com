@@ -1,7 +1,127 @@
+:root {
+    --color-ddd: #ddd;
+    --color-5d5d5d: #5d5d5d;
+    --color-white: white;
+    --color-black: black;
+    --color-FC7933: #0047ff;
+    --color-FA5736: #138dff;
+    --color-F7233C: #01c5ef;
+    --font-kantumruy: "Kantumruy Pro", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-bokor: "Bokor", system-ui;
+    --font-battambang: "Battambang", system-ui;
+}
 
+.bg-red{
+    background-color:red;
+}
+.bg-bule{
+    background-color: blue;
+}
+.bg-orange{
+    background-color: orange;
+}
 
+.notification-page .header-notification {
+    border-bottom: 2px solid var(--color-ddd);
+}
 
-.notification-page .title h2{
+.notification-page .title-header h2 {
     font-size: 30px;
-    color:var(--color-FA5736)
+    color: var(--color-FA5736)
+}
+
+.notification-page .header-right ul {
+    list-style: none;
+}
+
+.notification-page .header-right ul li {
+    font-size: 20px;
+    padding: 10px 5px 5px 10px;
+}
+
+.notification-page .message-body .date-header h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #464646;
+}
+
+.notification-page .message-body .message {
+    background-color: #eeeeee84;
+    /* border: 1px solid #4aa8ff; */
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 15px;
+}
+
+.notification-page .message-body .message .message-left {
+    display: flex;
+    padding-left: 40px;
+}
+
+.notification-page .message-body .message .message-left .pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid var(--color-FA5736);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px 0px 0px;
+    position: relative;
+}
+
+.notification-page .message-body .message .message-left .pic img {
+    height: 35px;
+}
+
+.notification-page .message-body .message .message-left .pic div {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    top: 13px;
+    left: -40px;
+}
+
+.notification-page .message-body .message .message-left .notification-des {
+    width: 80%;
+}
+
+.notification-page .message .message-left .notification-des h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #464646;
+}
+
+.notification-page .message .message-left .notification-des p {
+    font-size: 15px;
+    color: #5d5959;
+    height: 24px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.notification-page .message:hover .message-left .notification-des p {
+    height: 110px;
+}
+
+.notification-page .message .message-right .ellipsis {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #e8e8e891;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-page .message .message-right .ellipsis i {
+    font-size: 20px;
+    color: #5d5959;
+
 }
