@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service-page.css" />
     <link rel="stylesheet" href="css/login_signup-page.css" />
-    <link rel="stylesheet" href="css/our-team.css" />
     <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
     <!-- ! tr -->
     <link rel="stylesheet" href="vendor/css/uicons-thin-rounded.css" />
     <!-- ! ts -->
     <link rel="stylesheet" href="vendor/css/uicons-thin-straight.css" />
+    <!-- ! bs -->
+    <link rel="stylesheet" href="vendor/css/uicons-brands.css" />
     <link rel="stylesheet" href="vendor/css/hover.css" />
     <link
       rel="stylesheet"
@@ -29,7 +30,243 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
+    <!-- !-------- header bar -------- -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="image/logo/camfix-high-resolution-logo-transparent (3).png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="navbar-nav">
+            <ul class="menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link hvr-underline-from-center"
+                  >ទំព័រដើម
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link hvr-underline-from-center"
+                  >សេវាកម្ម
+                </a>
+                <div class="drop-down">
+                  <div class="hidden"></div>
+                  <ul>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <span>សេវាកម្មជួសជុលសម្ភារៈ</span>
+                        <i class="fa-solid fa-angle-right arrow-right"></i>
+                      </a>
+                      <div class="drop-down sub-drop-down">
+                        <div class="hidden"></div>
+                        <ul>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ម៉ាស៊ីនត្រជាក់</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ទូរទឹកកក</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>មីក្រូវ៉ែវ</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ម៉ាស៊ីនបោកគក់</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ម៉ាស៊ីនស្រូបផ្សែង</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ចង្ក្រាន</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>សេវាកម្មថែទាំសម្ភារៈ</span>
+                        <i class="fa-solid fa-angle-right arrow-right"></i>
+                      </a>
+                      <div class="drop-down sub-drop-down">
+                        <div class="hidden"></div>
+                        <ul>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ម៉ាស៊ីនត្រជាក់</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ទូរទឹកកក</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">
+                              <span>ចង្ក្រាន</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <span class="arrow-up"></span>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link hvr-underline-from-center">ទំនិញ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link hvr-underline-from-center"
+                  >ព័ត៌មាន</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="our-team.html"
+                  class="nav-link hvr-underline-from-center"
+                  >ក្រុមអ្នកជំនាញ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link hvr-underline-from-center"
+                  >អំពីយើង</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link hvr-underline-from-center"
+                  >ទំនាក់ទំនង</a
+                >
+              </li>
+            </ul>
+            <div class="navbar-right">
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="fi fi-rr-shopping-cart"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fi fi-rr-bell"></i></a>
+                  <div class="drop-down">
+                    <div class="hidden"></div>
+                    <div class="notification">
+                      <h4>ការជូនដំណឹង</h4>
+                      <ul id="notifications-scrollbar">
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/logo/logo.png" alt="" />
+                            </div>
+                            <div class="notification-des">
+                              <h5>CamFix company</h5>
+                              <p>ប្រម៉ូតសិនពិសេស! បញ្ចុះតម្លៃ៣០%...</p>
+                              <small class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>11:11 ព្រឹក 18 មេសា ២០២៤</span>
+                              </small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/logo/logo.png" alt="" />
+                            </div>
+                            <div class="notification-des">
+                              <h5>CamFix company</h5>
+                              <p>ប្រម៉ូតសិនពិសេស! បញ្ចុះតម្លៃ៣០%...</p>
+                              <small class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>11:11 ព្រឹក 18 មេសា ២០២៤</span>
+                              </small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/logo/logo.png" alt="" />
+                            </div>
+                            <div class="notification-des">
+                              <h5>CamFix company</h5>
+                              <p>ប្រម៉ូតសិនពិសេស! បញ្ចុះតម្លៃ៣០%...</p>
+                              <small class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>11:11 ព្រឹក 18 មេសា ២០២៤</span>
+                              </small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/logo/logo.png" alt="" />
+                            </div>
+                            <div class="notification-des">
+                              <h5>CamFix company</h5>
+                              <p>ប្រម៉ូតសិនពិសេស! បញ្ចុះតម្លៃ៣០%...</p>
+                              <small class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>11:11 ព្រឹក 18 មេសា ២០២៤</span>
+                              </small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/logo/logo.png" alt="" />
+                            </div>
+                            <div class="notification-des">
+                              <h5>CamFix company</h5>
+                              <p>ប្រម៉ូតសិនពិសេស! បញ្ចុះតម្លៃ៣០%...</p>
+                              <small class="time">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>11:11 ព្រឹក 18 មេសា ២០២៤</span>
+                              </small>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="notifications.html" target="_blank" class="view"
+                        >មើលសារទាំងអស់</a
+                      >
+                    </div>
+                    <span class="arrow-up"></span>
+                  </div>
+                </li>
+              </ul>
+              <div class="profile">
+                <a href="#" class="nav-link"
+                  ><img
+                    src="https://cdn.icon-icons.com/icons2/2518/PNG/512/letter_f_icon_151254.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- !--------- Our Team page ----------- -->
     <main class="our-team-page">
       <section class="banner">
@@ -53,528 +290,623 @@
           </div>
         </div>
       </div>
+      <!-- !-------------  Show member of team -------------------->
       <section class="our-team">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                  <div class="card">
-                    <div class="pic">
-                      <img src="image/our-team/team-1-2.jpg" alt="" />
-                    </div>
-                    <div class="background-hover"></div>
-                    <div class="content">
-                      <div class="name">
-                        <h3>អានណា អេឌ្រា</h3>
-                      </div>
-                      <div class="subtitle">
-                        <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                      </div>
-                    </div>
-                    <div class="icon-social">
-                      <div class="icon">
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+          <div class="row">
+            <!-- ?-------------- show all members in the team ---------------- -->
+            <!-- ?-------------- show all members in the team ---------------- -->
+            <!-- ?-------------- show all members in the team ---------------- -->
+            <!-- ?-------------- show all members in the team ---------------- -->
+            <!-- ?-------------- show all members in the team ---------------- -->
+            <!-- ?-------------- show all members in the team ---------------- -->
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="card">
-                    <div class="pic">
-                      <img src="image/our-team/team-1-2.jpg" alt="" />
-                    </div>
-                    <div class="background-hover"></div>
-                    <div class="content">
-                      <div class="name">
-                        <h3>អានណា អេឌ្រា</h3>
-                      </div>
-                      <div class="subtitle">
-                        <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                      </div>
-                    </div>
-                    <div class="icon-social">
-                      <div class="icon">
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
                   </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-3">
-                  <div class="card">
-                    <div class="pic">
-                      <img src="image/our-team/team-1-2.jpg" alt="" />
-                    </div>
-                    <div class="background-hover"></div>
-                    <div class="content">
-                      <div class="name">
-                        <h3>អានណា អេឌ្រា</h3>
-                      </div>
-                      <div class="subtitle">
-                        <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                      </div>
-                    </div>
-                    <div class="icon-social">
-                      <div class="icon">
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="card">
-                    <div class="pic">
-                      <img src="image/our-team/team-1-2.jpg" alt="" />
-                    </div>
-                    <div class="background-hover"></div>
-                    <div class="content">
-                      <div class="name">
-                        <h3>អានណា អេឌ្រា</h3>
-                      </div>
-                      <div class="subtitle">
-                        <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                      </div>
-                    </div>
-                    <div class="icon-social">
-                      <div class="icon">
-                        <i class="fa-solid fa-share-nodes"></i>
-                      </div>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="card">
-                      <div class="pic">
-                        <img src="image/our-team/team-1-2.jpg" alt="" />
-                      </div>
-                      <div class="background-hover"></div>
-                      <div class="content">
-                        <div class="name">
-                          <h3>អានណា អេឌ្រា</h3>
-                        </div>
-                        <div class="subtitle">
-                          <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
-                        </div>
-                      </div>
-                      <div class="icon-social">
-                        <div class="icon">
-                          <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
               </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="pic">
+                  <img src="image/our-team/team-1-2.jpg" alt="" />
+                </div>
+                <div class="background-hover"></div>
+                <div class="content">
+                  <div class="name">
+                    <h3>អានណា អេឌ្រា</h3>
+                  </div>
+                  <div class="subtitle">
+                    <small>អ្នកជំនាញខាងប្រព័ន្ធភ្លើង</small>
+                  </div>
+                </div>
+                <div class="icon-social">
+                  <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <!-- !----------- Footer -------------- -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="footer-left">
+              <div class="logo">
+                <img
+                  src="image/logo/camfix-high-resolution-logo-transparent (3).png"
+                  alt=""
+                />
+              </div>
+              <div class="description">
+                <p>
+                  CamFixគឺជាវេបសាយដែលបង្កើតឡើងក្នុងគោលបំណងដើម្បីផ្ដល់នូវសេវាកម្មជួសជុលសម្ភារប្រើប្រាស់ក្នុងផ្ទះនិងមានសេវាកម្មតំហែទាំផងដែរ។
+                  ពួកយើងត្រៀមខ្លួនរួចជាស្រេចក្នុងការជួយដោះស្រាយបញ្ហារបស់លោកអ្នក
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-link">
+              <div class="title">
+                <h3>តំណភ្ជាប់</h3>
+                <div class="border-bottom"></div>
+              </div>
+              <div class="link">
+                <ul>
+                  <li><a href="">ទំព័រដើម </a></li>
+                  <li><a href="">សេវាកម្ម</a></li>
+                  <li><a href="">ទំនិញ</a></li>
+                  <li><a href="">ព័ត៌មាន</a></li>
+                  <li><a href="">ក្រុមអ្នកជំនាញ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="contact-footer">
+              <div class="title">
+                <h3>ទំនាក់ទំនងមកកាន់យើង</h3>
+                <div class="border-bottom"></div>
+              </div>
+              <div class="contact">
+                <small
+                  ><i class="fa-solid fa-phone"></i>(+855) 96 34 45 523</small
+                >
+                <small
+                  ><i class="fa-solid fa-envelope"></i
+                  >camfix123@gaiml.com</small
+                >
+              </div>
+            </div>
+            <div class="social-media">
+              <div class="title">
+                <h3>បណ្ដាញសង្គមរបស់យើង</h3>
+                <div class="border-bottom"></div>
+              </div>
+              <ul>
+                <li>
+                  <a href=""><i class="fi fi-brands-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fi fi-brands-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fi fi-brands-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fi fi-brands-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fi fi-brands-telegram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fi fi-brands-tik-tok"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrigth mt-30">
+        <p>រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ @២០២៤ <span>CamFix</span></p>
+      </div>
+    </footer>
   </body>
 </html>
