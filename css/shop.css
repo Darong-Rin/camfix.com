@@ -144,7 +144,6 @@
 .shop-detail-page .pic-detail {
     width: 100%;
     height: 600px;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
 }
 
 .shop-detail-page .pic-detail .main-pic {
@@ -165,8 +164,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #0bffe7;
+    border: 2px solid var(--color-F7233C);
     border-radius: 5px;
+    background-color: #fff;
 
 }
 
@@ -216,6 +216,7 @@
     width: 100%;
     height: 600px;
     background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     padding: 20px;
 }
 
@@ -225,35 +226,37 @@
     border-bottom: 1px solid #ddd;
 }
 
-.shop-detail-page .detail details {
+.shop-detail-page .detail .detail-product {
     margin: 10px 0px;
 }
 
-.shop-detail-page .detail details summary {
-    font-size: 18px;
+.shop-detail-page .detail .detail-product h4 {
+    font-size: 17px;
+    font-weight: 600;
     padding: 5px;
     color: #303030;
     list-style: none;
     cursor: pointer;
 }
 
-.shop-detail-page .detail details summary i {
+.shop-detail-page .detail .detail-product h4 i {
     color: #5d5d5d;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.shop-detail-page .detail details ul {
-    list-style: none;
+.shop-detail-page .detail.detail-product ul {
     border-bottom: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.shop-detail-page .detail details ul li {
+.shop-detail-page .detail .detail-product ul li {
     font-size: 16px;
     color: #5d5d5d;
+    list-style: none;
+    padding-left: 20px;
 }
 
-.shop-detail-page .detail details ul li i {
+.shop-detail-page .detail .detail-product ul li i {
     margin-right: 8px;
     font-size: 18px;
     color: #138dff
