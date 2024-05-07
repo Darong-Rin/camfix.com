@@ -1,0 +1,61 @@
+:root {
+    --color-ddd: #ddd;
+    --color-5d5d5d: #5d5d5d;
+    --color-303030: #303030 --color-white: white;
+    --color-black: black;
+    --color-FC7933: #0047ff;
+    --color-FA5736: #138dff;
+    --color-F7233C: #01c5ef;
+    --font-kantumruy: "Kantumruy Pro", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-battambang: "Battambang", system-ui;
+  }
+
+.service-care-page .service-care .discount .title-dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-care-page .service-care .discount .title-dis h3{
+    font-size: 25px;
+    text-align: center;
+    color:#434343
+}
+.service-care-page .service-care .discount .title-dis .rular {
+    display: flex;
+    align-items: center;
+  }
+  
+.service-care-page .service-care .discount .title-dis .rular div {
+    width: 40px;
+    height: 2px;
+    background-color: #01c5ef;
+  }
+  
+.service-care-page .service-care .discount .title-dis .rular div:nth-child(2) {
+    background-color: #138dff;
+    height: 4px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .service-care-page .service-care .title-service-care h3{
+    font-size: 25px;
+    color:#434343;
+}
+.service-care-page .service-care .title-service-care p{
+    font-size: 16px;
+    color:#6b6b6b;
+}
