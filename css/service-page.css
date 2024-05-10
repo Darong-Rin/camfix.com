@@ -9,18 +9,6 @@
   --font-kantumruy: "Kantumruy Pro", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 }
-
-body {
-  background-color: #f5f7fa;
-}
-
-/* !---------------- CSS - 1 -------------------*/
-header {
-  width: 100%;
-  height: 70px;
-  /* background-color: aqua;se */
-}
-
 /* !--------------- service page ------------- */
 .banner {
   width: 100%;
@@ -54,12 +42,8 @@ header {
 /* ?------------------------------ */
 .service-page .service .card {
   width: 100%;
-  /* height: 400px; */
   background-color: #72bbff15;
-  /* padding: 20px; */
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  /* border-radius: 5px; */
   position: relative;
 }
 
