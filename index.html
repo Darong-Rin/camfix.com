@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service-page.css" />
     <link rel="stylesheet" href="css/login_signup-page.css" />
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="vendor/css/tom-select.css" />
     <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
     <!-- ! tr -->
@@ -348,39 +350,55 @@
                 <div class="drop-down">
                   <div class="hidden"></div>
                   <div class="profile-nav-bar">
-                    <div class="user-profile">
-                      <div class="pic">
-                        <img src="" alt="" />
+                    <a href="">
+                      <div href="" class="user-profile">
+                        <div class="pic">
+                          <img src="image/our-team/team.jpg" alt="" />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">វិន​ ចិត្រា</h3>
+                          <small>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>chatra123@gmail.com</span>
+                          </small>
+                        </div>
                       </div>
-                      <div class="user-info">
-                        <h3 class="name">វិន​ ចិត្រា</h3>
-                        <small>
-                          <i class="fa-regular fa-envelope"></i>
-                          <span>chatra123@gmail.com</span>
-                        </small>
-                      </div>
-                    </div>
-                    <div class="sitting">
+                    </a>
+                    <div class="setting-profile">
                       <ul>
                         <li>
-                          <a href="">ការជូនដំណឹង</a>
+                          <a href="">
+                            <span>ការជូនដំណឹង</span>
+                            <span>3</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="">កន្ត្រករបស់ខ្ញុំ</a>
+                          <a href="">
+                            <span>កន្ត្រករបស់ខ្ញុំ</span>
+                            <span>3</span>
+                          </a>
                         </li>
-                        <li>
+                        <li class="languages">
                           <label for="">ភាសា</label>
-                          <select name="" id="">
-                            <option value="">ខ្មែរ</option>
-                            <option value="">អង់គ្លេស</option>
-                            <option value="">ចិន</option>
+                          <select name="" id="languages-id">
+                            <option value="kh">ខ្មែរ</option>
+                            <option value="eng">អង់គ្លេស</option>
+                            <option value="ch">ចិន</option>
                           </select>
                         </li>
                         <li>
-                          <a href="">គោលការណ៏ឯកជន</a>
+                          <!-- <a href="">404 Eorro page</a> -->
                         </li>
                         <li>
-                          <a href="login.html"> ចាកចេញ </a>
+                          <a href="">គោលការណ៏ឯកជនភាព</a>
+                        </li>
+                        <li>
+                          <a href="login.html">
+                            <span>
+                              ចាកចេញ
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -580,7 +598,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/washing-machine.png" alt="">
+                    <img src="image/icon/washing-machine.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -597,7 +615,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/air-conditioner.png" alt="">
+                    <img src="image/icon/air-conditioner.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -614,7 +632,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/fridge.png" alt="">
+                    <img src="image/icon/fridge.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -631,7 +649,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/microwave-oven.png" alt="">
+                    <img src="image/icon/microwave-oven.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -648,7 +666,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/gas-stove.png" alt="">
+                    <img src="image/icon/gas-stove.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -665,7 +683,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/kitchen-hood.png" alt="">
+                    <img src="image/icon/kitchen-hood.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -682,7 +700,7 @@
                 <div class="background"></div>
                 <div class="content">
                   <div class="icon">
-                    <img src="image/icon/plumber.png" alt="">
+                    <img src="image/icon/plumber.png" alt="" />
                   </div>
                   <div class="title">
                     <p>សេវាកម្មជួសជុល</p>
@@ -702,7 +720,9 @@
           <div class="row mt-30">
             <div class="col-12">
               <div class="btn-view">
-                <a href="service-page.html" class="hvr-sweep-to-right">មើលសេវាកម្មទាំងអស់...</a>
+                <a href="service-page.html" class="hvr-sweep-to-right"
+                  >មើលសេវាកម្មទាំងអស់...</a
+                >
               </div>
             </div>
           </div>
@@ -1301,7 +1321,6 @@
         </div>
       </section>
     </main>
-
     <!-- !----------- Footer -------------- -->
     <footer>
       <div class="container">
@@ -1388,5 +1407,13 @@
         <p>រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ @២០២៤ <span>CamFix</span></p>
       </div>
     </footer>
+    <script src="vendor/js/tom-select.complete.min.js"></script>
+    <script>
+      new TomSelect("#languages-id", {
+        persist: false,
+        createOnBlur: true,
+        create: true,
+      });
+    </script>
   </body>
 </html>

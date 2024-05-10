@@ -620,7 +620,70 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .cart .xmark:ho
   color: rgb(255, 60, 60);
 }
 
+/* !----------------- Profile ---------------- */
+header .navbar .navbar-nav .navbar-right .profile {
+  position: relative;
+}
 
+header .navbar .navbar-nav .navbar-right .profile .drop-down {
+  /* display: block; */
+  width: 270px;
+  position: absolute;
+  right: -10px;
+  height:340px;
+}
+
+header .navbar .navbar-nav .navbar-right .profile .drop-down .arrow-up {
+  right: 16px;
+}
+
+header .navbar .navbar-nav .navbar-right .profile .drop-down a {
+  text-decoration: none;
+}
+
+header .navbar .navbar-nav .navbar-right .profile .drop-down a .user-profile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+}
+
+header .navbar .navbar-nav .navbar-right .profile .drop-down a .user-profile .pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 3px solid rgb(59, 89, 255);
+  position: relative;
+}
+
+header .navbar .navbar-nav .navbar-right .profile .drop-down a .user-profile .pic img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 100%;
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .navbar .navbar-nav .profile .drop-down .user-profile .user-info {
+  margin-left: 15px;
+}
+
+header .navbar .navbar-nav .profile .drop-down .user-profile .user-info h3 {
+  font-size: 20px;
+  margin-bottom: -10px;
+  color: var(--color-black);
+}
+
+header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
+  font-size: 13px;
+  color: #4e4e4e;
+}
 /* !------------------ breadcrumb -------------*/
 /*?--------------------------------------------*/
 .breadcrumb {
@@ -1093,19 +1156,23 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .cart .xmark:ho
 }
 
 @keyframes mymove {
-  0%{
+  0% {
     transform: scale(105%);
   }
-  25%{
+
+  25% {
     transform: scale(110%);
   }
-  50%{
+
+  50% {
     transform: scale(115%);
   }
-  75%{
+
+  75% {
     transform: scale(110%);
   }
-  100%{
+
+  100% {
     transform: scale(105%);
   }
 }
@@ -1391,6 +1458,7 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .cart .xmark:ho
   opacity: 1;
   height: 185px;
 }
+
 /* !---------- Shop ------------- */
 .shop {
   margin-top: 70px;
@@ -1800,7 +1868,7 @@ footer .copyrigth p span {
 }
 
 /* !------------------------------------------------- */
-/* !                     404 PAGE                     */
+/* !                 Contact US PAGE                  */
 /* !------------------------------------------------- */
 /* ?------------------------------------------------- */
 /* *------------------------------------------------- */
@@ -1952,4 +2020,308 @@ footer .copyrigth p span {
   width: 100%;
   /* height: 750px; */
   background-color: rebeccapurple;
+}
+
+/* !------------------------------------------------- */
+/* !                 about US PAGE                    */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+.about-page .title-about-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-page .title-about-web h3 {
+  font-size: 25px;
+  color: #0194ef;
+}
+
+.about-page .title-about-web h3 span {
+  font-family: var(--font-poppins);
+}
+
+.about-page .rular {
+  display: flex;
+  align-items: center;
+  margin-top: -2px;
+}
+
+.about-page .rular div {
+  width: 40px;
+  height: 1px;
+  background-color: #0194ef;
+}
+
+.about-page .rular div:nth-child(2) {
+  background-color: #138dff;
+  height: 3px;
+}
+
+.about-page .about-website .text {
+  padding: 25px;
+  background-color: #9cd9ff72;
+  border-radius: 20px;
+}
+
+.about-page .about-website .text p {
+  font-size: 19px;
+  color: #323232;
+}
+
+.about-page .about-website .pic {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-page .about-website .pic img {
+  width: 100%;
+}
+
+.about-page .about-website .pic img:nth-child(2) {
+  position: absolute;
+  width: 130px;
+  top: 10px;
+  left: 100px;
+  animation: logo 4s infinite;
+}
+
+@keyframes logo {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.about-page .about-us {
+  margin-top: 40px;
+}
+
+.about-page .about-us .text p {
+  font-size: 19px;
+  margin-top: 20px;
+  color: #0b1c2a
+}
+
+.about-page .about-us .text p span {
+  /* font-family: var(--font-poppins); */
+  color: var(--color-FA5736);
+  font-weight: 600;
+}
+
+.about-page .about-us .text p a {
+  font-size: 19px;
+  text-decoration: none;
+  color: #0194ef;
+  font-weight: 600;
+}
+
+.about-page .about-us .text p a:hover {
+  color: #0047ff;
+  text-decoration: underline;
+}
+
+.about-page .about-us .team {
+  border-bottom: 2px solid #909090;
+}
+
+.about-page .about-us .team h3 {
+  font-size: 25px;
+  color: #323232
+}
+
+.about-page .about-us .card {
+  background-color: #eaeaea8f;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-page .about-us .card .pic {
+  margin-top: 15px;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 3px solid #0194ef;
+}
+
+.about-page .about-us .card .pic img {
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+  border: 3px solid white;
+  object-fit: cover;
+  background-image: cover;
+}
+
+.about-page .about-us .card .name h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #0194ef;
+}
+
+.about-page .about-us .card .school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page .about-us .card .school small {
+  font-size: 18px;
+  text-align: center;
+  width: 90%;
+  color: #575757;
+}
+
+.about-page .about-us .card .school small:nth-child(1) {
+  font-size: 14px;
+}
+
+.about-page .about-us .row-card {
+  justify-content: center;
+  gap: 30px;
+}
+
+/* !------------------------------------------------- */
+/* !                 404 Error PAGE                    */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+.error-page .error-404 {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-page .error-404 .pic img {
+  height: 400px;
+  object-fit: cover;
+  background-size: cover;
+  animation: error-404 5s infinite;
+}
+
+.error-page .error-404 .content h3 {
+  font-size: 40px;
+  color: #0194ef;
+}
+
+.error-page .error-404 .content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes error-404 {
+  25% {
+    transform: scale(1.01);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  75% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/* !------------------------------------------------- */
+/* !                    FAQ PAGE                      */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+.faq-page .banner{
+  height: 250px;
+  background-color: #0194ef;
+}
+.faq-page .banner .text-banner{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq-page .banner .text-banner h2{
+  font-size: 35px;
+  color: #ffffff;
+  font-family: var(--font-kantumruy);
+}
+.faq-page .banner .text-banner h2 span{
+  font-family: var(--font-poppins);
+}
+
+.faq-page .banner .text-banner small{
+  font-size: 18px;
+  color: #ededed;
+}
+.faq-page .content .faq-text{
+  text-align: center;
+
+}
+
+.faq-page .content .faq-text small{
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 600;
+  color:#0194efb6;
+}
+
+.faq-page .content .faq-text p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.faq-page .content .faq-text h3{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px 0px 10px 0px;
+}
+
+.faq-page .content .details-faqs {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq-page .content .details-faqs details {
+  width: 700px;
+  padding: 10px 20px;
+  border: var(--color-FA5736);
+  border-radius: 10px;
+  background-color:#c2e8ff6b;
+}
+.faq-page .content .details-faqs details summary {
+  font-size: 20px;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.faq-page .content .details-faqs details summary i {
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.faq-page .content .details-faqs details summary:focus i {
+  transform: rotate(180deg);
+}
+  .faq-page .content .details-faqs details p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #484848;
 }

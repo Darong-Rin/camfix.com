@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CamFix.com</title>
+    <link
+      rel="icon"
+      href="image/logo/logo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/service-page.css" />
+    <link rel="stylesheet" href="css/login_signup-page.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="vendor/css/tom-select.css" />
+    <!-- ! rr -->
+    <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
+    <!-- ! tr -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-rounded.css" />
+    <!-- ! ts -->
+    <link rel="stylesheet" href="vendor/css/uicons-thin-straight.css" />
+    <!-- ! bs -->
+    <link rel="stylesheet" href="vendor/css/uicons-brands.css" />
+    <link rel="stylesheet" href="vendor/css/hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--!------------ ---------------------  -->
+    <main class="profile-page edit-page-profile">
+      <section class="profile mt-30">
+        <div class="container">
+          <div class="row mt-20">
+            <div class="col-9">
+              <div class="profile-right">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="profile-pic">
+                      <div class="pic">
+                        <div class="">
+                          <div class="upload-image">
+                            <input type="file" class="imgInp" data-id="img2" />
+                            <i class="fa-solid fa-camera"></i>
+                            <img id="img2" src="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="fname">នាមត្រកូល</label>
+                      <input
+                        type="text"
+                        name=""
+                        id="fname"
+                        class="form-control"
+                        placeholder="វិន​"
+                      />
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="fname">នាមខ្លួន</label>
+                      <input
+                        type="text"
+                        name=""
+                        id="fname"
+                        class="form-control"
+                        placeholder="ចិត្រា"
+                      />
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="email">អ៊ីមែល</label>
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control email"
+                        placeholder="chatra123@gmail.com"
+                      />
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="fname">លេខទូរស័ព្ទ</label>
+                      <input
+                        type="text"
+                        name=""
+                        id="fname"
+                        class="form-control num-phone"
+                        placeholder="(+885) 96 34 45 523"
+                      />
+                      <i class="fa-solid fa-mobile"></i>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="location">
+                      <div class="form-group">
+                        <label for="fname">ទីតាំងរបស់អ្នក</label>
+                        <input
+                          type="text"
+                          name=""
+                          id="fname"
+                          class="form-control"
+                          placeholder="ភូមិទួលសំពៅ សង្កាត់ទួលសង្កែទី១ ខណ្ឌឫស្សីកែវ រាជធានីភ្នំពេញ"
+                        />
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-20">
+                    <div class="btn-edit">
+                      <a href="profile.html">រួចរាល់</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="vendor/js/jquery-3.7.1.min.js"></script>
+    <script src="vendor/js/tom-select.complete.min.js"></script>
+    <script>
+      new TomSelect("#languages-id", {
+        persist: false,
+        createOnBlur: true,
+        create: true,
+      });
+    </script>
+    <script>
+      function ImageSetter(input, target) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            target.attr("src", e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $(".imgInp").change(function () {
+        var imgDiv = $(this).data("id");
+        imgDiv = $("#" + imgDiv);
+        ImageSetter(this, imgDiv);
+      });
+      function ImageSetter(input, target) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            target.attr("src", e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $(".imgInp").change(function () {
+        var imgDiv = $(this).data("id");
+        imgDiv = $("#" + imgDiv);
+        ImageSetter(this, imgDiv);
+      });
+    </script>
+  </body>
+</html>

@@ -139,22 +139,155 @@ header {
   color: var(--color-white);
 }
 
-/* animation: rotate 0.5s;
-  @keyframes rotate{
-    25%{
-        transform: rotate(-90deg);
-        transform: translateX(-10px);
-    }
-    50%{
-        transform: rotate(-180deg);
-        transform: translateX(-15px);
-    }
-    75%{
-        transform: rotate(-350deg);
-        transform: translateX(-20px);
-    }
-    100%{
-        transform: rotate(-360deg);
-        transform: translateX(-25px);
-    }
-  } */
+
+/* !----------------- */
+.service-repair-page .banner {
+  background-color: #138dff;
+  height: 400px;
+  overflow: hidden;
+}
+
+.service-repair-page .banner .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.service-repair-page .banner .content small {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.service-repair-page .banner .content h3 {
+  font-size: 60px;
+  color: white;
+  font-family: var(--font-kantumruy);
+
+}
+
+.service-repair-page .banner .pic img {
+  width: 550px;
+  margin-top: -50px;
+  margin-left: -100px;
+  animation: pic-banner 5s infinite;
+
+}
+
+@keyframes pic-banner {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.02);
+  }
+}
+
+.service-repair-page .service-repair .title-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-repair-page .service-repair .title-repair h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #138dff;
+}
+
+.service-repair-page .service-repair .title-repair .rular {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 30px 0px;
+}
+
+.service-repair-page .service-repair .title-repair .rular div {
+  width: 80px;
+  height: 2px;
+  background-color: #138dff;
+}
+
+.service-repair-page .service-repair .title-repair .rular div:nth-child(2) {
+  height: 5px;
+  background-color: #01c5ef;
+}
+
+.service-repair-page .service-repair .text {
+  margin-top: 20px;
+
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.service-repair-page .service-repair .text .title h4 {
+  font-size: 19px;
+  color: #303030;
+  font-weight: 600;
+}
+
+.service-repair-page .service-repair .text .title h4 i {
+  margin-right: 5px;
+}
+
+.service-repair-page .service-repair .text p {
+  font-size: 17px;
+  color: #3b3b3b;
+}
+
+.service-repair-page .service-repair .pic {
+  height: 300px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.service-repair-page .service-repair .pic img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-repair-page .service-repair .contact {
+  background-color: #49deff52;
+  padding: 20px;
+  height: 160px;
+}
+
+.service-repair-page .service-repair .contact p {
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.service-repair-page .service-repair .contact-right {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-repair-page .service-repair .contact-right small {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: var(--font-poppins);
+  margin-bottom: 10px;
+}
+
+.service-repair-page .service-repair .contact-right img {
+  height: 45px;
+  margin-right: 10px;
+}
+.service-repair-page .more-service h3{
+  font-size: 22px;
+  color: var(--color-FA5736);                                              ;
+  border-bottom: 3px solid var(--color-FA5736);
+}
