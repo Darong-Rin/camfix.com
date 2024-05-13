@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service-page.css" />
-    <link rel="stylesheet" href="css/login_signup-page.css" />
+    <link rel="stylesheet" href="vendor/css/aos.css">
     <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
     <!-- ! tr -->
@@ -35,26 +35,18 @@
         <div class="background-2"></div>
       </div>
       <div class="form">
-        <section class="form-signup">
+        <section class="form-signup" data-aos="zoom-in-down" data-aos-duration="1000">
           <form action="">
             <div class="row">
               <div class="col-12">
                 <div class="logo-header">
                   <div class="logo">
                     <a href="landing-page.html">
-                      <img
-                        src="image/logo/logo-camFix.png"
-                        alt=""
-                      />
+                      <img src="image/logo/logo-camFix.png" alt="" />
                     </a>
                   </div>
-                  <div class="description">
-                    <p>សូមស្វាគមន៏ការមកកាន់វេបសាយ CamFix របស់យើង</p>
-                  </div>
-                  <div class="rular">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                  <div class="title">
+                    <h3>ចុះឈ្មោះប្រើប្រាស់</h3>
                   </div>
                 </div>
               </div>
@@ -174,7 +166,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
+                      >
                         <img src="image/icon-social/facebook.png" alt="" />
                       </a>
                     </li>
@@ -196,5 +190,9 @@
         </section>
       </div>
     </main>
+    <script src="vendor/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

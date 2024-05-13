@@ -115,7 +115,8 @@
   text-align: center;
   font-size: 22px;
   color: var(--color-FA5736);
-  transition: 1s;}
+  transition: 1s;
+}
 
 .service-care-page .service-care .service-card .title p {
   text-align: center;
@@ -148,7 +149,7 @@
   text-align: center;
   background-color: #4ba8ff;
   width: 150px;
-  padding-top:15px;
+  padding-top: 15px;
   border-radius: 100% 100% 0 0;
   transition: 1s;
 }
@@ -169,32 +170,39 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  border-radius:0;
+  border-radius: 0;
 }
+
 .service-care-page .service-care .service-card:hover .title h3 {
   color: rgb(255, 255, 255);
 }
-.service-care-page .service-care .service-card:hover .title p{
+
+.service-care-page .service-care .service-card:hover .title p {
   color: #eeeeee;
 }
-.service-care-page .service-care .service-card:hover .description p{
+
+.service-care-page .service-care .service-card:hover .description p {
   color: #f6f6f6;
 }
+
 .service-care-page .service-care .service-card:hover .btn-service-card a {
   background-color: white;
   color: #4ba8ff;
 }
-.service-care-page .service-care .service-card .btn-service-card a:hover{
+
+.service-care-page .service-care .service-card .btn-service-card a:hover {
   text-decoration: underline;
   color: blue;
 }
+
 /* !------------ our-work ----------- */
-.our-work .title-header h3{
+.our-work .title-header h3 {
   text-align: center;
   font-size: 22px;
-  color:#525252
+  color: #525252
 }
-.our-work .left-our-work{
+
+.our-work .left-our-work {
   /* background-color: rebeccapurple; */
   height: 250px;
   display: flex;
@@ -202,33 +210,39 @@
   justify-content: center;
   flex-direction: column;
 }
-.our-work .left-our-work .title{
+
+.our-work .left-our-work .title {
   font-size: 25px;
-  color:#138dff;
+  color: #138dff;
 
 }
-.our-work .left-our-work .des{
+
+.our-work .left-our-work .des {
   font-size: 17px;
   color: #434343;
 }
-.our-work .right-our-work{
+
+.our-work .right-our-work {
   height: 250px;
 }
-.our-work .right-our-work .pic{
- width: 100%;
+
+.our-work .right-our-work .pic {
+  width: 100%;
   height: 250px;
   background-color: rebeccapurple;
   position: relative;
 }
-.our-work .right-our-work .pic img{
+
+.our-work .right-our-work .pic img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   background-size: cover;
 }
-.our-work .right-our-work .pic .result{
+
+.our-work .right-our-work .pic .result {
   font-size: 20px;
-  background-color:var(--color-FA5736);
+  background-color: var(--color-FA5736);
   color: white;
   padding-left: 15px;
   width: 40%;
@@ -237,4 +251,243 @@
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+/* !---------------------- Detail --------------- */
+.service-care-detail {
+  margin-bottom: 70px;
+}
+
+.service-care-detail .service .text {
+  height: 300px;
+}
+
+.service-care-detail .service .text h3 {
+  font-size: 25px;
+  color: #138dff;
+  margin-top: 40px;
+}
+
+.service-care-detail .service .text h3 i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.service-care-detail .service .text ul {
+  list-style: none;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.service-care-detail .service .text ul li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #434343;
+  line-height: 40px;
+}
+
+.service-care-detail .service .text ul li i {
+  font-size: 20px;
+  color: #138dff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.service-care-detail .service .pic {
+  height: 200px;
+}
+
+.service-care-detail .service .pic img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+}
+
+
+.service-care-detail .service .pic-care img {
+  height: 500px;
+  margin-top: 60px;
+}
+
+.service-care-detail .service .title-care {
+  width: 100%;
+  margin-left: -100px;
+  margin-top: 100px;
+}
+
+.service-care-detail .service .price-title {
+  margin-top: 50px;
+}
+
+.service-care-detail .service .price-title h3 {
+  font-size: 25px;
+  color: #138dff;
+  text-align: center;
+}
+
+.service-care-detail .service .price-title .rular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-care-detail .service .price-title .rular div {
+  width: 40px;
+  height: 2px;
+  background-color: #01c5ef;
+}
+
+.service-care-detail .service .price-title .rular div:nth-child(2) {
+  width: 30px;
+  height: 4px;
+  background-color: #138dff;
+}
+
+.service-care-detail .service .service-card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-care-detail .service .service-card-price .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-care-detail .service .card {
+  width: 330px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin: 50px 0px;
+}
+
+.service-care-detail .service .card .price {
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+}
+
+.price-card-bg-158effc9 {
+  background-color: #158effc9;
+}
+
+.price-card-bg-red {
+  background-color: red;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mr--90px {
+  margin-right: -90px;
+}
+
+.ml--90px {
+  margin-left: -90px;
+}
+
+.price-card-bg-yellow {
+  background-color: #b8b801;
+}
+
+
+.service-care-detail .service .card .btn-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-care-detail .service .card .btn-view a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px 2px 20px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.bg-yellow .btn-view a {
+  color: #b8b801;
+  border: 1px solid #b8b801;
+}
+
+.bg-yellow .btn-view a:hover {
+  color: white !important;
+}
+
+.bg-yellow .btn-view .hvr-sweep-to-right::before {
+  background-color: #b8b801 !important;
+}
+
+.bg-red-hover .btn-view a {
+  color: red;
+  border: 1px solid red;
+}
+
+.bg-red-hover .btn-view a:hover {
+  color: white !important;
+}
+
+.bg-red-hover .btn-view .hvr-sweep-to-right::before {
+  background-color: red !important;
+}
+
+.service-care-detail .service .card .price small:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.service-care-detail .service .card .price small:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-top: -5px;
+}
+
+.service-care-detail .service .card .detail {
+  padding-left: 10px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.service-care-detail .service .card .detail ul li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.service-care-detail .service .card .detail ul li i {
+  margin-right: 5px;
+  color: #0c7dff;
+}
+
+.service-care-detail .service .card .detail ul li .fa-xmark {
+  color: red;
+}
+
+.service-care-detail .service .card .contact {
+  margin-bottom: -20px;
+}
+
+.service-care-detail .recommend small {
+  font-size: 20px;
+  font-weight: 600;
+  color: #138dff;
+}
+
+.service-care-detail .recommend small i {
+  margin-right: 10px;
+}
+
+.service-care-detail .service-card {
+  height: 385px !important;
 }

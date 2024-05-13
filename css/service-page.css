@@ -9,6 +9,11 @@
   --font-kantumruy: "Kantumruy Pro", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 }
+
+.mt-80 {
+  margin-top: 60px;
+}
+
 /* !--------------- service page ------------- */
 .banner {
   width: 100%;
@@ -40,11 +45,26 @@
 
 /* !------------------------------ */
 /* ?------------------------------ */
+.service-page .service .title h2 {
+  font-size: 25px;
+  color: #138dff;
+
+}
+
+.service-page .service .sub-title p {
+  font-size: 18px;
+  color: #515151;
+
+}
+
 .service-page .service .card {
   width: 100%;
+  height: 375px;
   background-color: #72bbff15;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position: relative;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .service-page .service .card .image img {
@@ -123,7 +143,48 @@
   color: var(--color-white);
 }
 
+.service-page .card .soon {
+  height: 100%;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
+.service-page .card .soon .background img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  background-size: cover;
+
+}
+
+.service-page .card .soon .background .overlay {
+  width: 100%;
+  height: 375px;
+  background-color: #171717d2;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+.service-page .card:hover .soon .background .overlay{
+  background-color: #1717177e;
+}
+
+.service-page .card .soon .title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-page .card .soon .title h2 {
+  font-size: 50px;
+  color: white;
+  font-family: var(--font-kantumruy);
+  transition: 0.5s;
+}
 /* !----------------- */
 .service-repair-page .banner {
   background-color: #138dff;
@@ -270,8 +331,14 @@
   height: 45px;
   margin-right: 10px;
 }
-.service-repair-page .more-service h3{
+
+.service-repair-page .more-service h3 {
   font-size: 22px;
-  color: var(--color-FA5736);                                              ;
+  color: var(--color-FA5736);
+  ;
   border-bottom: 3px solid var(--color-FA5736);
+}
+
+.service-page .discount {
+  margin-top: 100px;
 }

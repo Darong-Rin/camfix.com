@@ -119,8 +119,12 @@ header .navbar .navbar-right {
   display: flex;
 }
 
+header .navbar .navbar-right .btn {
+  padding: 10px 0px;
+}
+
 header .navbar .navbar-right .btn a {
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -243,15 +247,13 @@ main .background .background-2 {
   height: 50px;
 }
 
-.form .logo-header .description p {
-  width: 350px;
-  margin: auto;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 0px 0px 5px 0px;
-  text-align: center;
-  color: #5d5d5d;
-  margin-top: -8px;
+.form .logo-header .title {
+  border-bottom: 2px solid #ddd;
+}
+
+.form .logo-header .title h3 {
+  font-size: 20px;
+  color: #4f4f4f;
 }
 
 .form .logo-header .rular {
@@ -392,13 +394,100 @@ main .background .background-2 {
 }
 
 /* !------------------------------------------------- */
+/* !             forgot passworld page                */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+.forgot-password .forgot-card {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password .forgot-card .card {
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.forgot-password .forgot-card .card .logo-header .logo a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.forgot-password .forgot-card .card .logo-header .logo a img {
+  height: 70px;
+}
+
+.forgot-password .forgot-card .card .title {
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+}
+
+.forgot-password .forgot-card .card .title small {
+  font-size: 25px;
+  color: #323232;
+  font-weight: 600;
+}
+
+.forgot-password .forgot-card .card form small {
+  font-size: 18px;
+  margin: 10px 0px;
+  display: block;
+  color: #323232
+}
+
+.forgot-password .forgot-card .card form input {
+  padding: 30px 15px;
+  font-size: 18px;
+}
+
+.forgot-password .forgot-card .card form .sub-text small {
+  font-size: 15px;
+  color: #656565;
+}
+
+.forgot-password .forgot-card .card form .sub-text small a {
+  font-size: 15px;
+  color: #0076e4;
+  text-decoration: none;
+}
+
+.forgot-password .forgot-card .card form .sub-text small a:hover {
+  color: var(--color-FC7933);
+  text-decoration: underline;
+}
+
+.forgot-password .forgot-card .card form .btn-form {
+  height: 40px;
+  background-color: #0194ef;
+}
+
+.forgot-password .forgot-card .card form .btn-form:hover {
+  background-color: #000dff;
+}
+
+
+
+
+
+/* !------------------------------------------------- */
 /* !                   HOME PAGE                      */
 /* !------------------------------------------------- */
 /* ?------------------------------------------------- */
 /* *------------------------------------------------- */
 header {
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   z-index: 99;
   position: sticky;
   top: 0;
@@ -410,7 +499,7 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0px;
+  /* padding: 8px 0px; */
 }
 
 header .navbar .logo a img {
@@ -785,7 +874,6 @@ header .navbar .navbar-nav .navbar-right ul .nav-item .drop-down .header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  /* background-color: rebeccapurple; */
   border-bottom: 2px solid #ddd;
 
 }
@@ -1064,7 +1152,6 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
   margin: auto;
   height: 220px;
   margin-top: -20px;
-  background-color: #F0FDFF;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -1735,7 +1822,7 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
 
 .shop .card {
   width: 100%;
-  /* height: 300px; */
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position: relative;
   transition: 0.5s;
@@ -1747,7 +1834,7 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
   align-items: center;
   padding: 15px;
   background-color: var(--color-white);
-  overflow: dden;
+  overflow: hidden;
 }
 
 .shop .card .pic img {
@@ -1829,7 +1916,7 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
 }
 
 .shop .card:hover {
-  margin-top: -10px;
+  transform: scale(1.03) !important;
 }
 
 /* !---------------- Blog ------------------ */
@@ -1922,6 +2009,11 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
 
 .blog-section .card:hover .pic img {
   transform: scale(1.1);
+}
+
+li a.active {
+  color: #0076e4 !important;
+  border-bottom: 2px solid var(--color-FA5736);
 }
 
 /* !------------------ Footer ------------------- */
@@ -2119,6 +2211,10 @@ footer .copyrigth p span {
 /* !------------------------------------------------- */
 /* ?------------------------------------------------- */
 /* *------------------------------------------------- */
+.our-team-page {
+  margin-bottom: 50px;
+}
+
 .our-team-page .banner-our-team {
   width: 100%;
   height: 350px;
@@ -2139,6 +2235,32 @@ footer .copyrigth p span {
   font-family: var(--font-kantumruy);
 }
 
+.our-team-page .description-header {
+  padding: 10px 0px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.our-team-page .description-header h1 {
+  font-size: 30px;
+  color: #323232;
+}
+
+.our-team-page .description-header p {
+  font-size: 18px;
+  margin-top: -5px;
+  font-size: 600;
+  color: #414141;
+}
+
+.our-team-page .our-team {
+  border: none;
+}
+
+.our-team-page .our-team .card {
+  margin-bottom: 0px;
+}
+
 /* !------------------------------------------------- */
 /* !               notification PAGE                  */
 /* !------------------------------------------------- */
@@ -2155,6 +2277,10 @@ footer .copyrigth p span {
 
 .bg-orange {
   background-color: orange;
+}
+
+.notification-page {
+  margin-bottom: 70px;
 }
 
 .notification-page .header-notification {
@@ -2310,6 +2436,7 @@ footer .copyrigth p span {
 
 .contact-page .contact-left {
   height: 400px;
+  width: 380px;
   background-color: white;
   border-radius: 10px;
   padding-left: 30px;
@@ -2377,7 +2504,12 @@ footer .copyrigth p span {
 }
 
 .contact-page .contact-right .form-group {
-  margin-top: 10px;
+  margin-top: 15px;
+}
+
+.contact-page .contact-right .form-group .form-control {
+  padding: 15px 10px;
+  font-size: 18px;
 }
 
 .contact-page .contact-right .form-group textarea {
@@ -2601,6 +2733,10 @@ footer .copyrigth p span {
 /* !------------------------------------------------- */
 /* ?------------------------------------------------- */
 /* *------------------------------------------------- */
+.error-page {
+  margin: 90px 0px 20px 0px;
+}
+
 .error-page .error-404 {
   padding: 30px;
   display: flex;
@@ -2742,6 +2878,15 @@ footer .copyrigth p span {
   margin-top: 10px;
 }
 
+.profile-page .profile .title {
+  border-bottom: 2px solid #ddd;
+  margin: 20px 0px;
+}
+
+.profile-page .profile .title h1 {
+  font-size: 30px;
+}
+
 .profile-page .profile .profile-left {
   padding: 10px;
   border: 1px solid #ddd;
@@ -2753,7 +2898,7 @@ footer .copyrigth p span {
 }
 
 .profile-page .profile .profile-right {
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -2781,6 +2926,7 @@ footer .copyrigth p span {
 .profile-page .profile .profile-right .btn-edit {
   display: flex;
   justify-content: end;
+  margin: 7px 0px;
 }
 
 .profile-page .profile .profile-right .btn-edit a {
@@ -2801,7 +2947,7 @@ footer .copyrigth p span {
 
 /* !---------------- Edit profile ------------- */
 .edit-page-profile {
-  margin: 30px 0px 60px 0px;
+  margin: 60px 0px;
 }
 
 .edit-page-profile .profile .profile-right .btn-edit {
@@ -2956,4 +3102,242 @@ footer .copyrigth p span {
   font-size: 18px;
   margin-top: 10px;
   color: #484848;
+}
+
+/* !------------------------------------------------- */
+/* !                 Payment PAGE                     */
+/* !------------------------------------------------- */
+/* ?------------------------------------------------- */
+/* *------------------------------------------------- */
+.payment-page {
+
+  margin: 50px 0px;
+}
+
+.payment-page .title-header {
+  border-bottom: 2px solid #b1b1b1;
+}
+
+.payment-page .title-header h3 {
+  font-size: 30px;
+  color: #3a3a3a
+}
+
+.payment-page .step {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.payment-page .step .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.payment-page .step .text small {
+  font-size: 25px;
+  font-weight: 550;
+  color: #118afc;
+}
+
+.payment-page .step .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.payment-page .step .line .tic i {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8d8d8d;
+}
+
+.c-118afc {
+  color: #118AFC !important;
+}
+
+.payment-page .step .line .line-left {
+  width: 46%;
+  height: 5px;
+  background-color: #118afc;
+}
+
+.payment-page .step .line .line-right {
+  width: 46%;
+  height: 5px;
+  background-color: #8d8d8d;
+}
+
+.payment-page .info-user {
+  width: 100%;
+}
+
+.payment-page .info-user form {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+}
+
+.payment-page .info-user .title h3 {
+  font-size: 20px;
+  color: #323232;
+  margin: 10px 0px;
+  margin-left: 5px;
+}
+
+.payment-page .info-user form .form-group {
+  position: relative;
+
+}
+
+.payment-page .info-user form .form-group i {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.payment-page .info-user form .form-control {
+  font-size: 18px;
+  height: 50px !important;
+  padding-left: 35px !important;
+}
+
+.payment-page .older-summery {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment-page .older-summery .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-page .older-summery .header small {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 3px 20px;
+  color: #323232;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment-page .older-summery .date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+.payment-page .older-summery .date small {
+  font-size: 14px;
+  color: #404040;
+}
+
+.payment-page .older-summery .date-time {
+  border-bottom: 1px dotted #404040;
+}
+
+.payment-page .older-summery .product-quantity small {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.payment-page .payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 30px 0px 20px 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment-page .payment h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  padding: 5px;
+  background-color: rgb(235, 235, 235);
+  color: #323232;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment-page .payment .type {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-page .payment .type-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  width: 90%;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.payment-page .payment .type-payment input[type=radio] {
+  cursor: pointer;
+  height: 20px;
+  /* border: 0; */
+  width: 20px;
+  margin-left: -8px;
+}
+
+.payment-page .payment .type-payment label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.payment-page .payment .type-payment label small {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  margin-left: 20px;
+  color: #3a3a3a;
+
+}
+
+.payment-page .payment .type-payment label img {
+  height: 30px;
+}
+
+.payment-page .payment .type-payment:focus {
+  border: 2px solid #0047ff;
+}
+
+.payment-page .payment button {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  padding: 5px;
+  background-color: #4b7eff;
+  color: white;
+  border: none;
+  font-family: var(--font-battambang);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.payment-page .payment button:hover{
+  background-color: #0048ffd6;
 }

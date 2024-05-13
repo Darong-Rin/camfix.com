@@ -12,8 +12,12 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service-page.css" />
-    <link rel="stylesheet" href="css/login_signup-page.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/service-care.css" />
     <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="vendor/css/tom-select.css" />
+    <link rel="stylesheet" href="vendor/css/aos.css" />
+    <link rel="stylesheet" href="vendor/css/swiper-bundle.min.css" />
     <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
     <!-- ! tr -->
@@ -30,9 +34,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="vendor/css/swiper-bundle.min.css" />
   </head>
-
   <body>
     <!-- !-------- header bar -------- -->
     <header>
@@ -40,28 +42,27 @@
         <nav class="navbar">
           <div class="logo">
             <a href="index.html">
-              <img
-                src="image/logo/camfix-high-resolution-logo-transparent (3).png"
-                alt=""
-              />
+              <img src="image/logo/logo-camFix.png" alt="" />
             </a>
           </div>
           <div class="navbar-nav">
             <ul class="menu">
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a href="index.html" class="nav-link hvr-underline-from-center"
                   >ទំព័រដើម
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="service-page.html"
+                  class="nav-link hvr-underline-from-center"
                   >សេវាកម្ម
                 </a>
                 <div class="drop-down">
                   <div class="hidden"></div>
                   <ul>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="service-page.html" class="nav-link">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                         <span>សេវាកម្មជួសជុលសម្ភារៈ</span>
                         <i class="fa-solid fa-angle-right arrow-right"></i>
@@ -70,32 +71,32 @@
                         <div class="hidden"></div>
                         <ul>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនត្រជាក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ទូរទឹកកក</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>មីក្រូវ៉ែវ</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនបោកគក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនស្រូបផ្សែង</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ចង្ក្រាន</span>
                             </a>
                           </li>
@@ -103,7 +104,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="service-care.html" class="nav-link">
                         <i class="fa-regular fa-calendar-check"></i>
                         <span>សេវាកម្មថែទាំសម្ភារៈ</span>
                         <i class="fa-solid fa-angle-right arrow-right"></i>
@@ -112,17 +113,17 @@
                         <div class="hidden"></div>
                         <ul>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ម៉ាស៊ីនត្រជាក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ទូរទឹកកក</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ចង្ក្រាន</span>
                             </a>
                           </li>
@@ -134,10 +135,10 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center">ទំនិញ</a>
+                <a href="shop.html" class="nav-link active">ទំនិញ</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a href="blog.html" class="nav-link hvr-underline-from-center"
                   >ព័ត៌មាន</a
                 >
               </li>
@@ -149,12 +150,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="about-us.html"
+                  class="nav-link hvr-underline-from-center"
                   >អំពីយើង</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="Contact-Us.html"
+                  class="nav-link hvr-underline-from-center"
                   >ទំនាក់ទំនង</a
                 >
               </li>
@@ -165,6 +170,78 @@
                   <a href="#" class="nav-link">
                     <i class="fi fi-rr-shopping-cart"></i>
                   </a>
+                  <div class="drop-down">
+                    <div class="hidden"></div>
+                    <div class="notification cart">
+                      <div class="header">
+                        <small>
+                          <i class="fi fi-rr-shopping-cart"></i>
+                          <span>3</span>
+                        </small>
+                        <div class="total-price">
+                          <small>តម្លៃសរុប : $ 937</small>
+                        </div>
+                      </div>
+                      <ul id="notifications-scrollbar">
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img
+                                src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="cart-des">
+                              <h5>ទូទឹកកកទ្វារមួយ 106លីត្រ</h5>
+                              <small
+                                ><span>$299</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/shop/microwave.png" alt="" />
+                            </div>
+                            <div class="cart-des">
+                              <h5>Panasonic Micro...</h5>
+                              <small
+                                ><span>$139</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/shop/ម៉ាស៊ីនត្រជាក់.jpg" alt="" />
+                            </div>
+                            <div class="cart-des">
+                              <h5>IFAN IF1272 POR...</h5>
+                              <small
+                                ><span>$499</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                      </ul>
+                      <a href="cart-page.html" class="view">មើលទាំងអស់</a>
+                    </div>
+                    <span class="arrow-up"></span>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link"><i class="fi fi-rr-bell"></i></a>
@@ -258,11 +335,67 @@
                 </li>
               </ul>
               <div class="profile">
-                <a href="#" class="nav-link"
-                  ><img
-                    src="https://cdn.icon-icons.com/icons2/2518/PNG/512/letter_f_icon_151254.png"
-                    alt=""
+                <a href="profile.html" class="nav-link"
+                  ><img src="image/our-team/team.jpg" alt=""
                 /></a>
+                <div class="drop-down">
+                  <div class="hidden"></div>
+                  <div class="profile-nav-bar">
+                    <a href="profile.html">
+                      <div href="" class="user-profile">
+                        <div class="pic">
+                          <img src="image/our-team/team.jpg" alt="" />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">វិន​ ចិត្រា</h3>
+                          <small>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>chatra123@gmail.com</span>
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="setting-profile">
+                      <ul>
+                        <li>
+                          <a href="notifications.html">
+                            <span>ការជូនដំណឹង</span>
+                            <span>3</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cart-page.html">
+                            <span>កន្ត្រករបស់ខ្ញុំ</span>
+                            <span>3</span>
+                          </a>
+                        </li>
+                        <li class="languages">
+                          <label for="">ភាសា</label>
+                          <select name="" id="languages-id">
+                            <option value="kh">ខ្មែរ</option>
+                            <option value="eng">អង់គ្លេស</option>
+                            <option value="ch">ចិន</option>
+                          </select>
+                        </li>
+                        <li>
+                          <!-- <a href="">404 Eorro page</a> -->
+                        </li>
+                        <li>
+                          <a href="">គោលការណ៏ឯកជនភាព</a>
+                        </li>
+                        <li>
+                          <a href="login.html">
+                            <span>
+                              ចាកចេញ
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="arrow-up"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -272,6 +405,19 @@
     <!-- !----------- Shop Detail------ -->
     <main class="shop-detail-page mt-20">
       <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="breadcrumb">
+              <small>
+                <a href="index.html">ទំព័រដើម</a>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="shop.html">ហាងទំនិញ</a>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="">ទូទឹកកក</a>
+              </small>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-6">
             <div class="pic-detail">
@@ -285,17 +431,17 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="main-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="main-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="main-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                 </div>
@@ -306,17 +452,17 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="sub-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="sub-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="sub-pic">
-                      <img src="image/9f373555e65adf67cea3e33bcc90ee5f6511fa87.jpg" />
+                      <img src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg" />
                     </div>
                   </div>
                 </div>
@@ -387,12 +533,12 @@
               <div class="row">
                 <div class="col-6">
                   <div class="add-cart">
-                    <a href="#"> ដាក់ក្នុងកន្ដ្រក </a>
+                    <a href="cart-page.html"> ដាក់ក្នុងកន្ដ្រក </a>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="add-cart">
-                    <a href="#">ទិញឥឡូវនេះ</a>
+                    <a href="payment.html">ទិញឥឡូវនេះ</a>
                   </div>
                 </div>
               </div>
@@ -406,20 +552,56 @@
               <small class="recommend-title">ណែនាំផលិតផល</small>
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-30">
             <div class="col-3">
-              <a href="/login.html">
+              <a href="shop-detail.html">
+                <div class="card" data-aos="zoom-in" data-aos-duration="500">
+                  <div class="pic">
+                    <img src="image/shop/ទូទឹកកក3.jpg" alt="" />
+                  </div>
+                  <div class="shop-card-des">
+                    <a href="category-shop-refrigerator.html" class="type"
+                      >ទូរទឹកកក</a
+                    >
+                    <a href="shop-detail.html" class="name"
+                      >CHEST FREEZER 250L</a
+                    >
+                  </div>
+                  <div class="card-bottom">
+                    <div class="price">
+                      <small> <del>$399</del> $310</small>
+                    </div>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="cart-icon">
+                    <a href="">
+                      <i class="fi fi-rr-shopping-cart"></i>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="shop-detail.html">
                 <div class="card">
                   <div class="pic">
                     <img src="image/shop/microwave.png" alt="" />
                   </div>
                   <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
+                    <a href="#" class="type">មីក្រូវ៉ែវ</a>
+                    <a href="shop-detail.html" class="name"
+                      >Panasonic Grill Microwave</a
+                    >
                   </div>
                   <div class="card-bottom">
                     <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
+                      <small> <del>$139</del> $199 </small>
                     </div>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
@@ -439,18 +621,20 @@
             </div>
 
             <div class="col-3">
-              <a href="/login.html">
+              <a href="shop-detail.html">
                 <div class="card">
                   <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
+                    <img src="image/shop/ម៉ាស៊ីនត្រជាក់.jpg" alt="" />
                   </div>
                   <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
+                    <a href="" class="type">ម៉ាស៊ីនត្រជាក់</a>
+                    <a href="shop-detail.html" class="name"
+                      >IFAN IF1272 PORTABLE</a
+                    >
                   </div>
                   <div class="card-bottom">
                     <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
+                      <small> <del>$569</del> $499 </small>
                     </div>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
@@ -470,173 +654,20 @@
             </div>
 
             <div class="col-3">
-              <a href="/login.html">
+              <a href="shop-detail.html">
                 <div class="card">
                   <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
+                    <img src="image/shop/ចង្ក្រាន.jpg" alt="" />
                   </div>
                   <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
+                    <a href="#" class="type">ចង្ក្រាន</a>
+                    <a href="shop-detail.html" class="name"
+                      >ROYAL GOURMENT CC183...</a
+                    >
                   </div>
                   <div class="card-bottom">
                     <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                  </div>
-                  <div class="cart-icon">
-                    <a href="">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-3">
-              <a href="/login.html">
-                <div class="card">
-                  <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
-                  </div>
-                  <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
-                  </div>
-                  <div class="card-bottom">
-                    <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                  </div>
-                  <div class="cart-icon">
-                    <a href="">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-3">
-              <a href="/login.html">
-                <div class="card">
-                  <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
-                  </div>
-                  <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
-                  </div>
-                  <div class="card-bottom">
-                    <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                  </div>
-                  <div class="cart-icon">
-                    <a href="">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-3">
-              <a href="/login.html">
-                <div class="card">
-                  <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
-                  </div>
-                  <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
-                  </div>
-                  <div class="card-bottom">
-                    <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                  </div>
-                  <div class="cart-icon">
-                    <a href="">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-3">
-              <a href="/login.html">
-                <div class="card">
-                  <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
-                  </div>
-                  <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
-                  </div>
-                  <div class="card-bottom">
-                    <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                  </div>
-                  <div class="cart-icon">
-                    <a href="">
-                      <i class="fi fi-rr-shopping-cart"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-3">
-              <a href="/login.html">
-                <div class="card">
-                  <div class="pic">
-                    <img src="image/shop/microwave.png" alt="" />
-                  </div>
-                  <div class="shop-card-des">
-                    <a href="#" class="type">ទូរទឹកកក</a>
-                    <a href="#" class="name">POWERPAC PPF170 2 DOOR..</a>
-                  </div>
-                  <div class="card-bottom">
-                    <div class="price">
-                      <small> <del>$899.99</del> $699.99 </small>
+                      <small> <del>$330</del> $290 </small>
                     </div>
                     <div class="rating">
                       <i class="fa-solid fa-star"></i>
@@ -662,13 +693,12 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-5">
             <div class="footer-left">
               <div class="logo">
-                <img
-                  src="image/logo/camfix-high-resolution-logo-transparent (3).png"
-                  alt=""
-                />
+                <a href="index.html">
+                  <img src="image/logo/logo-camFix.png" alt="" />
+                </a>
               </div>
               <div class="description">
                 <p>
@@ -679,23 +709,43 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="footer-link">
-              <div class="title">
-                <h3>តំណភ្ជាប់</h3>
-                <div class="border-bottom"></div>
+            <div class="row">
+              <div class="col-6">
+                <div class="footer-link">
+                  <div class="title">
+                    <h3>តំណភ្ជាប់</h3>
+                    <div class="border-bottom"></div>
+                  </div>
+                  <div class="link">
+                    <ul>
+                      <li><a href="index.html">ទំព័រដើម </a></li>
+                      <li><a href="service-page.html">សេវាកម្ម</a></li>
+                      <li><a href="shop.html">ទំនិញ</a></li>
+                      <li><a href="blog.html">ព័ត៌មាន</a></li>
+                      <li><a href="our-team.html">ក្រុមអ្នកជំនាញ</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="link">
-                <ul>
-                  <li><a href="">ទំព័រដើម </a></li>
-                  <li><a href="">សេវាកម្ម</a></li>
-                  <li><a href="">ទំនិញ</a></li>
-                  <li><a href="">ព័ត៌មាន</a></li>
-                  <li><a href="">ក្រុមអ្នកជំនាញ</a></li>
-                </ul>
+              <div class="col-6">
+                <div class="footer-link">
+                  <div class="title">
+                    <h3>ទំព័រផ្សេងទៀត</h3>
+                    <div class="border-bottom"></div>
+                  </div>
+                  <div class="link">
+                    <ul>
+                      <li><a href="about-us.html">អំពីយើង</a></li>
+                      <li><a href="Contact-Us.html">ទំនាក់ទំនង</a></li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="404page.html">404 Page</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-4">
             <div class="contact-footer">
               <div class="title">
                 <h3>ទំនាក់ទំនងមកកាន់យើង</h3>
@@ -745,6 +795,8 @@
       </div>
     </footer>
   </body>
+  <script src="vendor/js/aos.js"></script>
+  <script src="vendor/js/tom-select.complete.min.js"></script>
   <script src="vendor/js/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
@@ -798,5 +850,15 @@
         num.innerText = localStorage.getItem("num");
       }
     });
+  </script>
+  <script>
+    new TomSelect("#languages-id", {
+      persist: false,
+      createOnBlur: true,
+      create: true,
+    });
+  </script>
+  <script>
+    AOS.init();
   </script>
 </html>

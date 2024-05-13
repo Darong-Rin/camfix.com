@@ -12,9 +12,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/service-page.css" />
-    <link rel="stylesheet" href="css/login_signup-page.css" />
-    <link rel="stylesheet" href="css/shop.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/service-care.css" />
+    <!-- <link rel="stylesheet" href="css/shop.css"> -->
+    <link rel="stylesheet" href="vendor/css/tom-select.css" />
+    <link rel="stylesheet" href="vendor/css/aos.css" />
     <!-- ! rr -->
     <link rel="stylesheet" href="vendor/css/uicons-regular-rounded.css" />
     <!-- ! tr -->
@@ -32,7 +34,6 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <!-- !-------- header bar -------- -->
     <header>
@@ -40,28 +41,25 @@
         <nav class="navbar">
           <div class="logo">
             <a href="index.html">
-              <img
-                src="image/logo/camfix-high-resolution-logo-transparent (3).png"
-                alt=""
-              />
+              <img src="image/logo/logo-camFix.png" alt="" />
             </a>
           </div>
           <div class="navbar-nav">
             <ul class="menu">
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
-                  >ទំព័រដើម
-                </a>
+                <a href="index.html" class="nav-link hvr-underline-from-center">ទំព័រដើម </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="service-page.html"
+                  class="nav-link hvr-underline-from-center"
                   >សេវាកម្ម
                 </a>
                 <div class="drop-down">
                   <div class="hidden"></div>
                   <ul>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="service-page.html" class="nav-link">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                         <span>សេវាកម្មជួសជុលសម្ភារៈ</span>
                         <i class="fa-solid fa-angle-right arrow-right"></i>
@@ -70,32 +68,32 @@
                         <div class="hidden"></div>
                         <ul>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនត្រជាក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ទូរទឹកកក</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>មីក្រូវ៉ែវ</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនបោកគក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ម៉ាស៊ីនស្រូបផ្សែង</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="detail-service.html" class="nav-link">
                               <span>ចង្ក្រាន</span>
                             </a>
                           </li>
@@ -103,7 +101,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="service-care.html" class="nav-link">
                         <i class="fa-regular fa-calendar-check"></i>
                         <span>សេវាកម្មថែទាំសម្ភារៈ</span>
                         <i class="fa-solid fa-angle-right arrow-right"></i>
@@ -112,17 +110,17 @@
                         <div class="hidden"></div>
                         <ul>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ម៉ាស៊ីនត្រជាក់</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ទូរទឹកកក</span>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="service-care-detail.html" class="nav-link">
                               <span>ចង្ក្រាន</span>
                             </a>
                           </li>
@@ -134,10 +132,12 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center">ទំនិញ</a>
+                <a href="shop.html" class="nav-link hvr-underline-from-center"
+                  >ទំនិញ</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a href="blog.html" class="nav-link active"
                   >ព័ត៌មាន</a
                 >
               </li>
@@ -149,12 +149,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="about-us.html"
+                  class="nav-link hvr-underline-from-center"
                   >អំពីយើង</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hvr-underline-from-center"
+                <a
+                  href="Contact-Us.html"
+                  class="nav-link hvr-underline-from-center"
                   >ទំនាក់ទំនង</a
                 >
               </li>
@@ -165,6 +169,78 @@
                   <a href="#" class="nav-link">
                     <i class="fi fi-rr-shopping-cart"></i>
                   </a>
+                  <div class="drop-down">
+                    <div class="hidden"></div>
+                    <div class="notification cart">
+                      <div class="header">
+                        <small>
+                          <i class="fi fi-rr-shopping-cart"></i>
+                          <span>3</span>
+                        </small>
+                        <div class="total-price">
+                          <small>តម្លៃសរុប : $ 937</small>
+                        </div>
+                      </div>
+                      <ul id="notifications-scrollbar">
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img
+                                src="image/shop/ទូទឹកកកទ្វារមួយ 106លីត្រ.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="cart-des">
+                              <h5>ទូទឹកកកទ្វារមួយ 106លីត្រ</h5>
+                              <small
+                                ><span>$299</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/shop/microwave.png" alt="" />
+                            </div>
+                            <div class="cart-des">
+                              <h5>Panasonic Micro...</h5>
+                              <small
+                                ><span>$139</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pic">
+                              <img src="image/shop/ម៉ាស៊ីនត្រជាក់.jpg" alt="" />
+                            </div>
+                            <div class="cart-des">
+                              <h5>IFAN IF1272 POR...</h5>
+                              <small
+                                ><span>$499</span>
+                                <span>ចំនួន : 1</span>
+                              </small>
+                            </div>
+                          </a>
+                          <div class="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                          </div>
+                        </li>
+                      </ul>
+                      <a href="cart-page.html" class="view">មើលទាំងអស់</a>
+                    </div>
+                    <span class="arrow-up"></span>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link"><i class="fi fi-rr-bell"></i></a>
@@ -258,11 +334,67 @@
                 </li>
               </ul>
               <div class="profile">
-                <a href="#" class="nav-link"
-                  ><img
-                    src="https://cdn.icon-icons.com/icons2/2518/PNG/512/letter_f_icon_151254.png"
-                    alt=""
+                <a href="profile.html" class="nav-link"
+                  ><img src="image/our-team/team.jpg" alt=""
                 /></a>
+                <div class="drop-down">
+                  <div class="hidden"></div>
+                  <div class="profile-nav-bar">
+                    <a href="profile.html">
+                      <div href="" class="user-profile">
+                        <div class="pic">
+                          <img src="image/our-team/team.jpg" alt="" />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">វិន​ ចិត្រា</h3>
+                          <small>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>chatra123@gmail.com</span>
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="setting-profile">
+                      <ul>
+                        <li>
+                          <a href="notifications.html">
+                            <span>ការជូនដំណឹង</span>
+                            <span>3</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cart-page.html">
+                            <span>កន្ត្រករបស់ខ្ញុំ</span>
+                            <span>3</span>
+                          </a>
+                        </li>
+                        <li class="languages">
+                          <label for="">ភាសា</label>
+                          <select name="" id="languages-id">
+                            <option value="kh">ខ្មែរ</option>
+                            <option value="eng">អង់គ្លេស</option>
+                            <option value="ch">ចិន</option>
+                          </select>
+                        </li>
+                        <li>
+                          <!-- <a href="">404 Eorro page</a> -->
+                        </li>
+                        <li>
+                          <a href="">គោលការណ៏ឯកជនភាព</a>
+                        </li>
+                        <li>
+                          <a href="login.html">
+                            <span>
+                              ចាកចេញ
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="arrow-up"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -272,28 +404,13 @@
     <!-- !------- Blog page ------ -->
     <main class="blog-page">
       <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="breadcrumb">
-              <small>
-                <a href="index.html">ទំព័រដើម</a>
-                <i class="fa-solid fa-caret-right"></i>
-                <a href="#">ព័ត៌មាន</a>
-              </small>
-            </div>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row mt-50">
           <div class="col-8">
             <div class="detail-blog">
               <div class="row">
                 <div class="col-12">
                   <div class="title-blog-news">
-                    <h2>
-                      គ្រឿងម៉ាស៊ីនកំដៅ ទូរទឹកកក និងម៉ាស៊ីនត្រជាក់ ដំឡើង ថែទាំ
-                      និងជួសជុលលំនៅដ្ឋាន ពាណិជ្ជកម្ម និងឧស្សាហកម្ម
-                      កំដៅប្រព័ន្ធខ្យល់ និងប្រព័ន្ធត្រជាក់
-                    </h2>
+                    <h2>ការជួសជុលផ្ទះបាយសមស្របធ្វើឱ្យងាយស្រួល</h2>
                   </div>
                 </div>
               </div>
@@ -308,7 +425,7 @@
                   <div class="comment-share">
                     <div class="commet">
                       <i class="fa-regular fa-comments"></i>
-                      <small>ចំនួនមតិ 0 |</small>
+                      <small>ចំនួនមតិ 2 |</small>
                     </div>
                     <div class="share">
                       <i class="fa-solid fa-share-nodes"></i>
@@ -320,16 +437,18 @@
               <div class="row">
                 <div class="col-12">
                   <p>
-                    បុគ្គលធ្វើការឱ្យអ្នកម៉ៅការដំឡើង ក្រុមហ៊ុនសំណង់
-                    ក្រុមហ៊ុនលក់ដុំអាហារ ក្រុមហ៊ុនវិស្វកម្ម និងហាងលក់រាយ
-                    និងខ្សែសង្វាក់ ក្រុមហ៊ុនជួសជុលផ្ទះ និងអគារ
-                    អាជីវកម្មបដិសណ្ឋារកិច្ច និងសេវាកម្ម។
-                    ពួកគេក៏អាចធ្វើការដោយខ្លួនឯងផងដែរ។
-                    ពួកគេអាចធ្វើការលើគម្រោងធំៗសម្រាប់ខ្សែសង្វាក់លក់រាយដូចជា
-                    ហាងលក់គ្រឿងទេស ឃ្លាំង ឬហាងពាណិជ្ជកម្ម
-                    និងការអភិវឌ្ឍន៍លំនៅដ្ឋាន
-                    ឬពួកគេអាចធ្វើការលើការងារតូចៗនៅក្នុងផ្ទះ ហាងងាយស្រួល
-                    ឬភោជនីយដ្ឋាន។
+                    ផ្ទះបាយប្រកបដោយប្រសិទ្ធភាព
+                    និងផាសុកភាពកំពុងក្លាយជាការពេញនិយមកាន់តែខ្លាំងឡើងនៅក្នុងផ្ទះថ្មី។
+                    ជាប្រពៃណី ផ្ទះបាយដើរតួនាទីជាបន្ទប់រៀបចំអាហារប៉ុណ្ណោះ។
+                    ទោះជាយ៉ាងណាក៏ដោយនៅក្នុងផ្ទះទំនើបនាពេលបច្ចុប្បន្ននេះវាក៏បម្រើគោលបំណងផ្សេងទៀតបន្ថែមពីលើការបម្រើផងដែរ។
+                    នៅពេលដែលស្ត្រីមេផ្ទះកាន់តែច្រើនក្លាយជាម្តាយធ្វើការ
+                    ផ្ទះបាយដ៏ល្អឥតខ្ចោះក៏គួរតែបំពេញតម្រូវការផ្សេងៗរបស់ពួកគេផងដែរ។
+                    អ្នក​នឹង​មាន​ប្លង់​ទូទៅ​ដែល​បាន​សរសេរ​រួច​ហើយ​នៅ​ពេល​រៀបចំ​ផែនការ​ជួសជុល​ផ្ទះបាយ​របស់​អ្នក។
+                    បន្ទាប់មក
+                    ពិចារណាលើការប៉ះតូចតាចដែលនឹងបង្គ្រប់ការកែលម្អផ្ទះបាយរបស់អ្នក។
+                    កម្ពស់គណៈរដ្ឋមន្ត្រី ការដាក់ឧបករណ៍
+                    និងផលិតផលផ្ទះបាយប្រកបដោយនិរន្តរភាពដែលត្រូវប្រើប្រាស់
+                    គឺគ្រាន់តែជាកត្តាមួយចំនួនដែលត្រូវពិចារណាប៉ុណ្ណោះ។
                   </p>
                 </div>
                 <div class="col-12">
@@ -342,28 +461,32 @@
                 </div>
                 <div class="col-12">
                   <p>
-                    មនុស្សនៅក្នុងការងារនេះជាទូទៅធ្វើការ 40 ម៉ោងក្នុងមួយសប្តាហ៍។
-                    ការងារបន្ថែមម៉ោង និងពេលហៅទូរសព្ទ ជួនកាលត្រូវការជាចាំបាច់
-                    ដើម្បីបញ្ចប់គម្រោងទាន់ពេលវេលា ឬជួសជុលឧបករណ៍សំខាន់ៗ (ឧទាហរណ៍
-                    ទូរទឹកកកដែលមានអាហារ ឬវត្ថុវេជ្ជសាស្ត្រ)។ ម៉ាស៊ីនត្រជាក់
-                    និងម៉ាស៊ីនត្រជាក់ជាធម្មតាដំណើរការនៅនឹងកន្លែងនៅកន្លែងធ្វើការ
-                    ដែលអាចស្ថិតនៅក្នុងអគារដែលកំពុងសាងសង់ ឬនៅក្នុងឃ្លាំង
-                    អគារការិយាល័យ មន្ទីរពេទ្យ សាលារៀន ឬហាង។ ពេលកំពុងធ្វើការ
-                    ពួកវាអាចស្ថិតនៅក្នុងកន្លែងត្រជាក់
-                    ដូចជាកន្លែងបង្កកក្នុងរយៈពេលយូរ
-                    ឬធ្វើការនៅកន្លែងក្តៅនៅពេលជួសជុលប្រព័ន្ធកំដៅ ឬម៉ាស៊ីនត្រជាក់។
-                    មនុស្សមួយចំនួននៅក្នុងការងារទាំងនេះអាចធ្វើការងារមួយចំនួននៅក្នុងការិយាល័យ
-                    ដោយបំពេញឯកសារ។ វាក៏មានពេលខ្លះផងដែរ
-                    ដែលពួកគេអាចនឹងត្រូវធ្វើការនៅខាងក្រៅ
-                    ហើយត្រូវដោះស្រាយជាមួយនឹងលក្ខខណ្ឌអាកាសធាតុផ្សេងៗគ្នា។
+                    នៅពេលជ្រើសរើសទូ ឬឧបករណ៍សម្រាប់កែលម្អផ្ទះបាយរបស់អ្នក
+                    សូមពិចារណាសម្ភារៈដែលមានគុណភាពខ្ពស់។
+                    បើប្រៀបធៀបទៅនឹងផ្ទះដែលនៅសល់
+                    ផ្ទះបាយគឺជាកន្លែងដែលអ្នកចំណាយពេលច្រើនបំផុត
+                    ហើយគំរូនេះត្រូវបានធ្វើម្តងទៀតអស់ជាច្រើនឆ្នាំ។
+                    អ្វីៗត្រូវតែមានរយៈពេលយូរ
+                    ឬអ្នកនឹងត្រូវចំណាយប្រាក់បន្ថែមដើម្បីជំនួសឧបករណ៍
+                    ឬជួសជុលផ្ទះបាយរបស់អ្នកបន្ទាប់ពីពីរបីឆ្នាំ។
+                    ការ​ជួសជុល​ផ្ទះបាយ​ជា​ចម្បង​ពាក់ព័ន្ធ​នឹង​ការ​ធ្វើ​ឱ្យ​ទាន់សម័យ​នូវ​តុ​តុ
+                    ការ​ជំនួស​ទូ ផ្លាស់​ប្តូរ​កម្រាលឥដ្ឋ និង​ការ​លាប​ពណ៌​ឡើង​វិញ
+                    ។ អាស្រ័យលើថវិការបស់អ្នក អ្នកអាចជ្រើសរើសរវាងថ្មម៉ាប
+                    ថ្មក្រានីត វត្ថុធាតុដើមធម្មជាតិ
+                    និងសម្ភារៈសំយោគសម្រាប់តុរបស់អ្នក។
+                    នៅពេលរចនាផ្ទះបាយរបស់អ្នកឡើងវិញ
+                    ការជំនួសទូត្រូវបានចាត់ទុកថាជាគម្រោងថ្លៃបំផុត។
+                    ផលិតផលផ្ទះបាយប្រកបដោយនិរន្តរភាពសម្រាប់ទូគួរតែត្រូវបានកំណត់ដោយគំនិតដែលអ្នកបានជ្រើសរើស
+                    និងបុគ្គលិកលក្ខណៈរបស់អ្នក។
+                    វាជាការល្អក្នុងការដឹងពីរបៀបមានផ្ទះបាយប្រកបដោយនិរន្តរភាព។
+                    នៅពេលពិចារណាលើការតុបតែងផ្ទះបាយ
+                    ខាងក្រោមនេះជាចំណុចមួយចំនួនដែលត្រូវចងចាំ
+                    ដើម្បីធានាបាននូវផាសុកភាព និងមុខងារនៃផ្ទះថ្មីរបស់អ្នក។
                   </p>
                 </div>
                 <div class="col-12">
                   <div class="pic-detail-news">
-                    <img
-                      src="image/service/washing-machine-repair-1200x800.webp"
-                      alt=""
-                    />
+                    <img src="image/blog/Local-Appliance-Repair.jpg" alt="" />
                   </div>
                 </div>
                 <div class="col-12">
@@ -382,60 +505,65 @@
                 </div>
               </div>
             </div>
-            <div class="news-other mt-30">
-              <div class="row">
-                <div class="col-4">
-                  <div class="header-title">
-                    <h3>អត្ថបទ​ដែល​ទាក់ទង</h3>
-                  </div>
-                </div>
+            <div class="comments-blog">
+              <div class="title">
+                <h2>បញ្ចេញមតិ</h2>
               </div>
-              <div class="row">
-                <div class="col-4">
-                  <div class="card-news">
-                    <a href="">
-                      <div class="pic">
-                        <img src="image/service/microwave.jpg" alt="" />
-                      </div>
-                      <div class="title">
-                        <p>
-                          ខ្សែសម្រាប់សុវត្ថិភាព៖
-                          ហានិភ័យដែលមិនអាចប្រាប់បាននៃការជួសជុលឧបករណ៍
-                        </p>
-                      </div>
-                    </a>
+              <div class="comments">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="write-comment">
+                      <form action="">
+                        <textarea
+                          name=""
+                          id=""
+                          placeholder="សូមសរសេរមតិនៅទីនេះ...."
+                          required
+                        ></textarea>
+                        <button type="submit">បញ្ជូន</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-4">
-                  <div class="card-news">
-                    <a href="">
-                      <div class="pic">
-                        <img src="image/service/microwave.jpg" alt="" />
-                      </div>
-                      <div class="title">
-                        <p>
-                          ខ្សែសម្រាប់សុវត្ថិភាព៖
-                          ហានិភ័យដែលមិនអាចប្រាប់បាននៃការជួសជុលឧបករណ៍
-                        </p>
-                      </div>
-                    </a>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="comment-all">
+                      <h3>មតិទាំងអស់</h3>
+                    </div>
                   </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="card-news">
-                    <a href="">
+                  <div class="col-12">
+                    <div class="user">
                       <div class="pic">
-                        <img src="image/service/microwave.jpg" alt="" />
+                        <img src="image/our-team/team-thumb-02.jpg" alt="" />
                       </div>
-                      <div class="title">
-                        <p>
-                          ខ្សែសម្រាប់សុវត្ថិភាព៖
-                          ហានិភ័យដែលមិនអាចប្រាប់បាននៃការជួសជុលឧបករណ៍
-                        </p>
+                      <div class="text">
+                        <h3>សុវណ្ណ​ មករា</h3>
+                        <p>អរគុណសម្រាប់ចែករំលែកចំណេះដឹងថ្មីៗ</p>
+                        <div class="date">
+                          <small>
+                            <span>២៧ មេសា ២០២៤ | </span>
+                            <a href=""> ឆ្លើយតប </a>
+                          </small>
+                        </div>
                       </div>
-                    </a>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="user reply">
+                      <div class="pic">
+                        <img src="image/logo/logo.png" alt="" />
+                      </div>
+                      <div class="text">
+                        <h3>CamFix</h3>
+                        <p>សូមអរគុណ</p>
+                        <div class="date">
+                          <small>
+                            <span>២៧ មេសា ២០២៤ | </span>
+                            <a href=""> ឆ្លើយតប </a>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -463,63 +591,51 @@
                   <div class="blog-news-new">
                     <ul>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img
+                              src="image/blog/Electrical-Safety-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="description">
+                            <h4>
+                              គន្លឹះសុវត្ថិភាពអគ្គិសនីឧបករណ៍ប្រើប្រាស់ក្នុងផ្ទះ
+                            </h4>
+                            <small
+                              >នៅក្នុងគ្រួសារទំនើបនីមួយៗ
+                              អគ្គិសនីគឺជាឆ្អឹងខ្នងដែលជួយឱ្យអ្វីៗដំណើរការដោយរលូន​
+                              ចាប់​ពី...</small
+                            >
+                          </div>
                         </a>
                       </li>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img src="image/blog/appliance-repair.png" alt="" />
+                          </div>
+                          <div class="description">
+                            <h4>ការណែនាំសម្រាប់ការជួសជុល និងថែទាំចង្ក្រាន</h4>
+                            <small
+                              >នៅពេលនិយាយអំពីការជួសជុលចង្ក្រាន
+                              ការធានាថាឧបករណ៍របស់អ្នកដំណើរការបានត្រឹមត្រូវគឺ...</small
+                            >
+                          </div>
                         </a>
                       </li>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img src="image/blog/Leaky-Ice-Maker.png" alt="" />
+                          </div>
+                          <div class="description">
+                            <h4>ការថែទាំបង្ការសម្រាប់ម៉ាស៊ីនផលិតទឺកកក</h4>
+                            <small
+                              >នៅពេលដែលអ្វីៗចាប់ផ្តើមដំណើរការខុសប្រក្រតី
+                              ទាំងនេះគឺជាពេលវេលាដែលអ្នកអាចរក្សាការ...</small
+                            >
+                          </div>
                         </a>
                       </li>
                     </ul>
@@ -534,87 +650,83 @@
                   <div class="blog-news-new">
                     <ul>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img
+                              src="image/blog/Local-Appliance-Repair.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="description">
+                            <h4>ការជួសជុលផ្ទះបាយសមស្របធ្វើឱ្យងាយស្រួល</h4>
+                            <small
+                              >ផ្ទះបាយប្រកបដោយប្រសិទ្ធភាព
+                              និងផាសុកភាពកំពុងក្លាយជាការពេញនិយមកាន់តែខ្លាំងឡើងនៅក្នុង...</small
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--!---------------  -->
+                <div class="col-12">
+                  <div class="title-news">
+                    <h3>អត្ថបទដែលទាក់ទង</h3>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="blog-news-new">
+                    <ul>
+                      <li>
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img
+                              src="image/blog/Local-Appliance-Repair.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="description">
+                            <h4>ការជួសជុលផ្ទះបាយសមស្របធ្វើឱ្យងាយស្រួល</h4>
+                            <small
+                              >ផ្ទះបាយប្រកបដោយប្រសិទ្ធភាព
+                              និងផាសុកភាពកំពុងក្លាយជាការពេញនិយមកាន់តែខ្លាំងឡើងនៅក្នុង...</small
+                            >
+                          </div>
                         </a>
                       </li>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img
+                              src="image/blog/Electrical-Safety-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="description">
+                            <h4>
+                              គន្លឹះសុវត្ថិភាពអគ្គិសនីឧបករណ៍ប្រើប្រាស់ក្នុងផ្ទះ
+                            </h4>
+                            <small
+                              >នៅក្នុងគ្រួសារទំនើបនីមួយៗ
+                              អគ្គិសនីគឺជាឆ្អឹងខ្នងដែលជួយឱ្យអ្វីៗដំណើរការដោយរលូន​
+                              ចាប់​ពី...</small
+                            >
+                          </div>
                         </a>
                       </li>
                       <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <img
-                            src="image/service/washing-machine-repair-1200x800.webp"
-                            alt=""
-                          />
-                          <small
-                            >ការជួសជុលឧបករណ៍មានតម្លៃសមរម្យជាងអ្វីដែលអ្នកគិត -
-                            ទទួលបានការជួសជុលឧបករណ៍ដែលមានតម្លៃសមរម្យនៅថ្ងៃនេះ</small
-                          >
+                        <a href="detail-blog.html">
+                          <div class="pic">
+                            <img src="image/blog/appliance-repair.png" alt="" />
+                          </div>
+                          <div class="description">
+                            <h4>ការណែនាំសម្រាប់ការជួសជុល និងថែទាំចង្ក្រាន</h4>
+                            <small
+                              >នៅពេលនិយាយអំពីការជួសជុលចង្ក្រាន
+                              ការធានាថាឧបករណ៍របស់អ្នកដំណើរការបានត្រឹមត្រូវគឺ...</small
+                            >
+                          </div>
                         </a>
                       </li>
                     </ul>
@@ -627,16 +739,15 @@
       </div>
     </main>
     <!-- !----------- Footer -------------- -->
-    <footer>
+    <footer class="mt-30">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-5">
             <div class="footer-left">
               <div class="logo">
-                <img
-                  src="image/logo/camfix-high-resolution-logo-transparent (3).png"
-                  alt=""
-                />
+                <a href="index.html">
+                  <img src="image/logo/logo-camFix.png" alt="" />
+                </a>
               </div>
               <div class="description">
                 <p>
@@ -647,23 +758,43 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="footer-link">
-              <div class="title">
-                <h3>តំណភ្ជាប់</h3>
-                <div class="border-bottom"></div>
+            <div class="row">
+              <div class="col-6">
+                <div class="footer-link">
+                  <div class="title">
+                    <h3>តំណភ្ជាប់</h3>
+                    <div class="border-bottom"></div>
+                  </div>
+                  <div class="link">
+                    <ul>
+                      <li><a href="index.html">ទំព័រដើម </a></li>
+                      <li><a href="service-page.html">សេវាកម្ម</a></li>
+                      <li><a href="shop.html">ទំនិញ</a></li>
+                      <li><a href="blog.html">ព័ត៌មាន</a></li>
+                      <li><a href="our-team.html">ក្រុមអ្នកជំនាញ</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="link">
-                <ul>
-                  <li><a href="">ទំព័រដើម </a></li>
-                  <li><a href="">សេវាកម្ម</a></li>
-                  <li><a href="">ទំនិញ</a></li>
-                  <li><a href="">ព័ត៌មាន</a></li>
-                  <li><a href="">ក្រុមអ្នកជំនាញ</a></li>
-                </ul>
+              <div class="col-6">
+                <div class="footer-link">
+                  <div class="title">
+                    <h3>ទំព័រផ្សេងទៀត</h3>
+                    <div class="border-bottom"></div>
+                  </div>
+                  <div class="link">
+                    <ul>
+                      <li><a href="about-us.html">អំពីយើង</a></li>
+                      <li><a href="Contact-Us.html">ទំនាក់ទំនង</a></li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="404page.html">404 Page</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-4">
             <div class="contact-footer">
               <div class="title">
                 <h3>ទំនាក់ទំនងមកកាន់យើង</h3>
@@ -712,5 +843,17 @@
         <p>រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ @២០២៤ <span>CamFix</span></p>
       </div>
     </footer>
+    <script src="vendor/js/aos.js"></script>
+    <script src="vendor/js/tom-select.complete.min.js"></script>
+    <script>
+      new TomSelect("#languages-id", {
+        persist: false,
+        createOnBlur: true,
+        create: true,
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
