@@ -77,9 +77,7 @@
 .service-page .service .card .title h4 {
   font-size: 20px;
   font-weight: 600;
-  /* color:var(--color-FC7933); */
   margin: 10px 20px;
-  /* text-align: center; */
 }
 
 .service-page .service .card .description {

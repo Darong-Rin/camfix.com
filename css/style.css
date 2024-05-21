@@ -9,6 +9,7 @@
 body {
   font-family: "Battambang", system-ui;
   background-color: #F0FDFF !important;
+  overflow-x: hidden;
 }
 
 :root {
@@ -1148,22 +1149,19 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
 
 /* !-------------- Experience ----------------- */
 .experience {
-  width: 100%;
-  margin: auto;
-  height: 220px;
-  margin-top: -20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 200px;
+  margin-top: -10px;
+}
+.experience .row{
+  justify-content: start;
 }
 
-.experience .row {
-  justify-content: flex-start;
-}
 
 .experience .experience-left {
-  width: 340px;
+  width: 330px;
   display: flex;
   align-items: center;
-  padding: 35px 10px 20px 30px;
+  padding: 35px 10px 20px 0px;
 }
 
 .experience .experience-left .experience-15 {
@@ -1193,49 +1191,53 @@ header .navbar .navbar-nav .profile .drop-down .user-profile .user-info small {
 }
 
 .experience .experience-center {
+  width: 410px;
   display: flex;
-  height: 220px;
-  width: 490px;
-
+  height: 200px;
   position: relative;
+  margin-left: 20px;
 }
 
 .experience .experience-center div {
-  width: 100px;
+  width: 150px;
   height: 100%;
   background-color: var(--color-FC7933);
   clip-path: polygon(95% 0, 100% 0, 50% 100%, 0 100%);
   position: absolute;
-  left: -5px;
+  left: 0px;  
 }
 
-.experience .experience-center img {
-  width: 100%;
+.experience .experience-center img {  
+  width: 400px;
   object-fit: cover;
-  background-size: cover;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  background-size: cover; 
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  margin-left: 50px;
+
 }
 
 .experience .experience-right {
-  width: 100%;
-  height: 220px;
-  padding-top: 20px;
+  width: 500px;
+  height: 200px;
+  padding-top: 10px;
+  margin-left: 42px;
+
 }
 
 .experience .experience-right .text {
-  width: 530px;
+  width: 100%;  
   height: 100%;
   background-color: var(--color-FC7933);
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 30px;
+  align-items: center;  
 }
 
 .experience .experience-right .text {
   font-size: 18px;
   color: var(--color-white);
   text-align: center;
+  padding: 0px 20px;
 }
 
 /* !----------- Why choose us ----------------- */
@@ -2368,7 +2370,7 @@ footer .copyrigth p span {
 }
 
 .notification-page .message:hover .message-left .notification-des p {
-  height: 110px;
+  height: auto;
 }
 
 .notification-page .message .message-right .ellipsis {
@@ -3094,7 +3096,7 @@ footer .copyrigth p span {
   right: 10px;
 }
 
-.faq-page .content .details-faqs details summary:focus i {
+.faq-page .content .details-faqs details summary:hover i {
   transform: rotate(180deg);
 }
 
@@ -3102,242 +3104,4 @@ footer .copyrigth p span {
   font-size: 18px;
   margin-top: 10px;
   color: #484848;
-}
-
-/* !------------------------------------------------- */
-/* !                 Payment PAGE                     */
-/* !------------------------------------------------- */
-/* ?------------------------------------------------- */
-/* *------------------------------------------------- */
-.payment-page {
-
-  margin: 50px 0px;
-}
-
-.payment-page .title-header {
-  border-bottom: 2px solid #b1b1b1;
-}
-
-.payment-page .title-header h3 {
-  font-size: 30px;
-  color: #3a3a3a
-}
-
-.payment-page .step {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-
-.payment-page .step .text {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 20px;
-}
-
-.payment-page .step .text small {
-  font-size: 25px;
-  font-weight: 550;
-  color: #118afc;
-}
-
-.payment-page .step .line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-}
-
-.payment-page .step .line .tic i {
-  font-size: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #8d8d8d;
-}
-
-.c-118afc {
-  color: #118AFC !important;
-}
-
-.payment-page .step .line .line-left {
-  width: 46%;
-  height: 5px;
-  background-color: #118afc;
-}
-
-.payment-page .step .line .line-right {
-  width: 46%;
-  height: 5px;
-  background-color: #8d8d8d;
-}
-
-.payment-page .info-user {
-  width: 100%;
-}
-
-.payment-page .info-user form {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-
-}
-
-.payment-page .info-user .title h3 {
-  font-size: 20px;
-  color: #323232;
-  margin: 10px 0px;
-  margin-left: 5px;
-}
-
-.payment-page .info-user form .form-group {
-  position: relative;
-
-}
-
-.payment-page .info-user form .form-group i {
-  font-size: 20px;
-  position: absolute;
-  top: 15px;
-  left: 10px;
-}
-
-.payment-page .info-user form .form-control {
-  font-size: 18px;
-  height: 50px !important;
-  padding-left: 35px !important;
-}
-
-.payment-page .older-summery {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.payment-page .older-summery .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.payment-page .older-summery .header small {
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  background-color: white;
-  padding: 3px 20px;
-  color: #323232;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.payment-page .older-summery .date {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-
-}
-
-.payment-page .older-summery .date small {
-  font-size: 14px;
-  color: #404040;
-}
-
-.payment-page .older-summery .date-time {
-  border-bottom: 1px dotted #404040;
-}
-
-.payment-page .older-summery .product-quantity small {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.payment-page .payment {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  margin: 30px 0px 20px 0px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.payment-page .payment h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 23px;
-  padding: 5px;
-  background-color: rgb(235, 235, 235);
-  color: #323232;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.payment-page .payment .type {
-  display: flex;
-  justify-content: center;
-}
-
-.payment-page .payment .type-payment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: 1px solid #ddd;
-  width: 90%;
-  border-radius: 20px;
-  height: 50px;
-}
-
-.payment-page .payment .type-payment input[type=radio] {
-  cursor: pointer;
-  height: 20px;
-  /* border: 0; */
-  width: 20px;
-  margin-left: -8px;
-}
-
-.payment-page .payment .type-payment label {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  margin-top: 8px;
-  cursor: pointer;
-}
-
-.payment-page .payment .type-payment label small {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: var(--font-poppins);
-  margin-left: 20px;
-  color: #3a3a3a;
-
-}
-
-.payment-page .payment .type-payment label img {
-  height: 30px;
-}
-
-.payment-page .payment .type-payment:focus {
-  border: 2px solid #0047ff;
-}
-
-.payment-page .payment button {
-  width: 100%;
-  text-align: center;
-  font-size: 23px;
-  padding: 5px;
-  background-color: #4b7eff;
-  color: white;
-  border: none;
-  font-family: var(--font-battambang);
-  margin-top: 20px;
-  cursor: pointer;
-}
-.payment-page .payment button:hover{
-  background-color: #0048ffd6;
 }
